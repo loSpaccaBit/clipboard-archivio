@@ -53,9 +53,6 @@ Built with **SwiftUI**, **Liquid Glass**, and a performance-first architecture: 
 - **Build from source:** `make install`
 - **Package for release:** `make package` → `dist/Clipboard-Archive.dmg`
 
-## Screenshots
-
-> Add screenshots to `docs/images/` and embed them here before your first GitHub release.
 
 ## Requirements
 
