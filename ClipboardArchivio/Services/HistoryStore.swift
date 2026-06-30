@@ -77,6 +77,8 @@ final class HistoryStore: ObservableObject {
         }
     }
 
+    var hasVaultedItems: Bool { items.contains(where: \.isVaulted) }
+
     func resolved(_ item: ClipboardItem) -> ClipboardItem {
         decryptedCache[item.id] ?? item
     }
@@ -501,7 +503,6 @@ final class HistoryStore: ObservableObject {
 
     private func computeVisibleItems() -> [ClipboardItem] {
         let query = searchQuery.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        let vaultUnlocked = vaultManager?.isUnlocked == true
 
         var result = items.sorted { lhs, rhs in
             if lhs.isPinned != rhs.isPinned { return lhs.isPinned && !rhs.isPinned }
@@ -510,7 +511,7 @@ final class HistoryStore: ObservableObject {
 
         switch activeFilter {
         case .all:
-            result = result.filter { !$0.isVaulted || vaultUnlocked }
+            break
         case .today:
             result = result.filter { Calendar.current.isDateInToday($0.createdAt) }
         case .pinned:

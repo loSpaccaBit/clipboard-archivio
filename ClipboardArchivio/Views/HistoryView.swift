@@ -23,6 +23,12 @@ struct HistoryView: View {
         .onAppear {
             store.refreshExpiredItems()
             searchFocused = false
+            Task { await requestVaultAccessIfNeeded() }
+        }
+        .onChange(of: store.activeFilter) { _, filter in
+            if filter == .vault {
+                Task { await requestVaultAccessIfNeeded() }
+            }
         }
         .onChange(of: appState.focusSearchToken) { _, _ in
             focusSearchField()
@@ -49,13 +55,16 @@ struct HistoryView: View {
 
     @ViewBuilder
     private var mainContent: some View {
-        if store.activeFilter == .vault && vault.needsAuthentication {
-            vaultLockedState
-        } else if store.visibleItems.isEmpty {
+        if store.visibleItems.isEmpty {
             emptyState
         } else {
             historyList
         }
+    }
+
+    private func requestVaultAccessIfNeeded() async {
+        guard vault.needsAuthentication, store.hasVaultedItems else { return }
+        _ = await vault.authenticate()
     }
 
     private var topControls: some View {
@@ -217,8 +226,8 @@ struct HistoryView: View {
                                 store.activeFilter = filter
                             }
                         }
-                        if filter == .vault && vault.needsAuthentication {
-                            Task { await vault.authenticate() }
+                        if filter == .vault {
+                            Task { await requestVaultAccessIfNeeded() }
                         }
                     }
                 }
@@ -301,17 +310,6 @@ struct HistoryView: View {
         .nativeInsetBackground()
         .accessibilityElement(children: .combine)
         .accessibilityLabel(L10n.savingPaused)
-    }
-
-    private var vaultLockedState: some View {
-        ContentUnavailableView {
-            Label(L10n.vaultProtected, systemImage: "lock.shield.fill")
-        } description: {
-            Text(L10n.vaultTouchIDHint)
-        } actions: {
-            Button(L10n.unlock) { Task { await vault.authenticate() } }
-                .buttonStyle(.borderedProminent)
-        }
     }
 
     private var emptyState: some View {
@@ -515,6 +513,9 @@ struct ClipboardRow: View {
     private var isSelected: Bool { stack.selectedIDs.contains(item.id) }
     private var isMasked: Bool { item.isVaulted && !vault.isUnlocked }
     private var displayItem: ClipboardItem { store.resolved(item) }
+    private var rowPreview: String {
+        isMasked ? "••••••••••••" : displayItem.preview
+    }
     private var justCopied: Bool { store.lastCopiedItemID == item.id }
 
     var body: some View {
@@ -539,9 +540,10 @@ struct ClipboardRow: View {
                             .foregroundStyle(.blue)
                             .accessibilityLabel(L10n.inVault)
                     }
-                    Text(displayItem.preview)
+                    Text(rowPreview)
                         .font(.body)
                         .lineLimit(2)
+                        .foregroundStyle(isMasked ? .secondary : .primary)
                 }
 
                 HStack(spacing: 4) {
@@ -670,7 +672,9 @@ struct ClipboardRow: View {
         }
         if item.isVaulted && vault.needsAuthentication {
             Task {
-                if await vault.authenticate() { copyItem() }
+                if await vault.authenticate() {
+                    copyItem()
+                }
             }
             return
         }
