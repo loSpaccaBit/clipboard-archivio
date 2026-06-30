@@ -3,6 +3,12 @@
 All notable changes to **Appunti Archivio** are documented here.  
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Fixed
+- CI / Release workflows: compile on GitHub runners (SDK 15) via `GLASS_SDK_FALLBACK` while local builds keep native Liquid Glass
+- Landing download: native `<a download>` without JS intercept; `.nojekyll` serves hosted DMG
+
 ## [1.6.3] - 2026-06-30
 
 ### Changed

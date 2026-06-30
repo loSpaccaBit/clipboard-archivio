@@ -9,40 +9,57 @@ permissions:
   contents: write
 
 jobs:
-  release:
-    name: Build & Publish
-    runs-on: macos-15
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 Scripts/i18n/validate-i18n.py
 
-      - name: Install XcodeGen
-        run: brew install xcodegen
-
-      - name: Validate i18n
-        run: python3 Scripts/i18n/validate-i18n.py
-
-      - name: Build Release
-        run: |
-          xcodegen generate
+  build-check:
+    name: Compile check (SDK 15 fallback)
+    runs-on: macos-15
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew install xcodegen
+      - run: xcodegen generate
+      - run: |
           xcodebuild \
             -scheme ClipboardArchivio \
             -configuration Release \
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO \
+            MACOSX_DEPLOYMENT_TARGET=15.0 \
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS='$(inherited) GLASS_SDK_FALLBACK' \
             build
+      - run: test -d "build/Build/Products/Release/Appunti Archivio.app"
 
-      - name: Package installer
-        run: |
-          chmod +x Scripts/package-installer.sh Scripts/package-dmg.sh
-          Scripts/package-installer.sh "${{ github.ref_name }}" build/Build/Products/Release/"Appunti Archivio.app"
-          Scripts/package-dmg.sh "${{ github.ref_name }}" build/Build/Products/Release/"Appunti Archivio.app"
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+  release-notes:
+    name: GitHub Release notes
+    runs-on: ubuntu-latest
+    needs: build-check
+    steps:
+      - uses: actions/checkout@v4
+      - uses: softprops/action-gh-release@v2
         with:
-          files: |
-            dist/Appunti-Archivio.dmg
-            dist/Appunti-Archivio.pkg
-            dist/Appunti-Archivio-v*.dmg
-            dist/Appunti-Archivio-v*.pkg
           generate_release_notes: true
+          body: |
+            ## Installazione
+
+            1. Scarica **Appunti-Archivio.dmg** dagli asset (o dalla [landing](https://lospaccabit.github.io/clipboard-archivio/))
+            2. Apri il DMG → doppio clic su **Installa Appunti Archivio**
+            3. Conferma nell'installer di sistema
+
+            ## Build release (maintainer)
+
+            I runner GitHub non hanno ancora Xcode 17 / macOS 26 SDK. Per un DMG con Liquid Glass nativo:
+
+            ```bash
+            make package
+            gh release upload ${{ github.ref_name }} dist/Appunti-Archivio.dmg dist/Appunti-Archivio.pkg --clobber
+            git add docs/download/Appunti-Archivio.dmg && git commit -m "docs: update landing DMG for ${{ github.ref_name }}"
+            ```
