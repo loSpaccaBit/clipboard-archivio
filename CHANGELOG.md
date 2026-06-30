@@ -5,6 +5,12 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.6.6] - 2026-06-30
+
+### Removed
+- First-launch onboarding window
+- DMG **Install Clipboard Archive** helper — classic drag-to-Applications only (fixes install script errors)
+
 ## [1.6.5] - 2026-06-30
 
 ### Fixed

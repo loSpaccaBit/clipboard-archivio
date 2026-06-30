@@ -53,8 +53,8 @@ jobs:
             ## Install
 
             1. Download **Clipboard-Archive.dmg** from assets (or the [landing page](https://lospaccabit.github.io/clipboard-archivio/))
-            2. Open the DMG → double-click **Install Clipboard Archive**, or drag the app to **Applications**
-            3. Onboarding opens on first launch (right-click → Open if Gatekeeper warns)
+            2. Open the DMG → drag **Clipboard Archive** to **Applications**
+            3. Launch from Applications (right-click → Open on first run if Gatekeeper warns)
 
             ## Direct download
 
