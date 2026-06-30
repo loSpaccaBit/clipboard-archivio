@@ -96,6 +96,12 @@ final class StatusBarController: NSObject {
         closePanel()
     }
 
+    func openArchivePanel() {
+        guard let button = statusItem?.button else { return }
+        guard !isPanelVisible else { return }
+        openPanel(relativeTo: button)
+    }
+
     private func updateClipboardPolling() {
         if appState.privacyManager.isPauseActive {
             appState.clipboardMonitor.setMode(.paused)

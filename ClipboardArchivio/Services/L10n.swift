@@ -186,6 +186,28 @@ enum L10n {
         static var documentPDF: String { tr("Document.pdf") }
     }
 
+    enum Onboarding {
+        static var windowTitle: String { tr("Welcome") }
+        static var title: String { tr("Clipboard Archive is ready") }
+        static var subtitle: String {
+            tr("Installed successfully. The app runs in your menu bar and saves everything you copy.")
+        }
+        static var stepMenuBarTitle: String { tr("Find it in the menu bar") }
+        static var stepMenuBarDetail: String {
+            tr("Look for the paperclip icon at the top of your screen. The app stays out of the Dock.")
+        }
+        static var stepShortcutTitle: String { tr("Open with ⌘⇧V") }
+        static var stepShortcutDetail: String {
+            tr("Press Command+Shift+V from any app to open your clipboard history.")
+        }
+        static var stepSavesTitle: String { tr("Copies save automatically") }
+        static var stepSavesDetail: String {
+            tr("Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips.")
+        }
+        static var getStarted: String { tr("Open archive") }
+        static var footer: String { tr("Adjust privacy, vault, and shortcuts in Preferences (⌘,).") }
+    }
+
     enum Filter {
         static var all: String { tr("All") }
         static var today: String { tr("Today") }

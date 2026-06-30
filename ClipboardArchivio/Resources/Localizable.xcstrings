@@ -1514,6 +1514,95 @@
         }
       }
     },
+    "Adjust privacy, vault, and shortcuts in Preferences (⌘,).": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifica privacy, vault e scorciatoie in Preferenze (⌘,)."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+          }
+        }
+      }
+    },
     "All": {
       "extractionState": "manual",
       "localizations": {
@@ -2938,6 +3027,95 @@
         }
       }
     },
+    "Clipboard Archive is ready": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard Archive is ready"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appunti Archivio è pronto"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard Archive is ready"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard Archive is ready"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard Archive is ready"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard Archive is ready"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard Archive is ready"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard Archive is ready"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard Archive is ready"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard Archive is ready"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard Archive is ready"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard Archive is ready"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard Archive is ready"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboard Archive is ready"
+          }
+        }
+      }
+    },
     "Clipboard Archive — saving paused": {
       "extractionState": "manual",
       "localizations": {
@@ -3379,6 +3557,95 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kopyalandı"
+          }
+        }
+      }
+    },
+    "Copies save automatically": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies save automatically"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le copie si salvano da sole"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies save automatically"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies save automatically"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies save automatically"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies save automatically"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies save automatically"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies save automatically"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies save automatically"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies save automatically"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies save automatically"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies save automatically"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies save automatically"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies save automatically"
           }
         }
       }
@@ -5252,6 +5519,95 @@
         }
       }
     },
+    "Find it in the menu bar": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find it in the menu bar"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trovala nella menu bar"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find it in the menu bar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find it in the menu bar"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find it in the menu bar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find it in the menu bar"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find it in the menu bar"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find it in the menu bar"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find it in the menu bar"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find it in the menu bar"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find it in the menu bar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find it in the menu bar"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find it in the menu bar"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find it in the menu bar"
+          }
+        }
+      }
+    },
     "Follow System": {
       "extractionState": "manual",
       "localizations": {
@@ -5964,6 +6320,95 @@
         }
       }
     },
+    "Installed successfully. The app runs in your menu bar and saves everything you copy.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed successfully. The app runs in your menu bar and saves everything you copy."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installazione completata. L'app è nella menu bar e salva tutto ciò che copi."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed successfully. The app runs in your menu bar and saves everything you copy."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed successfully. The app runs in your menu bar and saves everything you copy."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed successfully. The app runs in your menu bar and saves everything you copy."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed successfully. The app runs in your menu bar and saves everything you copy."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed successfully. The app runs in your menu bar and saves everything you copy."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed successfully. The app runs in your menu bar and saves everything you copy."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed successfully. The app runs in your menu bar and saves everything you copy."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed successfully. The app runs in your menu bar and saves everything you copy."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed successfully. The app runs in your menu bar and saves everything you copy."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed successfully. The app runs in your menu bar and saves everything you copy."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed successfully. The app runs in your menu bar and saves everything you copy."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installed successfully. The app runs in your menu bar and saves everything you copy."
+          }
+        }
+      }
+    },
     "Items in memory": {
       "extractionState": "manual",
       "localizations": {
@@ -6672,6 +7117,95 @@
           "stringUnit": {
             "state": "translated",
             "value": "Yerel akıllı algılama (çevrimiçi veri gönderilmez): JWT, API anahtarları, IBAN, kartlar, parolalar ve hassas bağlam. Kasa içeriği AES-GCM ile şifrelenir. Görüntülemek ve kopyalamak için Touch ID. Hassasiyet: Esnek, Dengeli, Katı."
+          }
+        }
+      }
+    },
+    "Look for the paperclip icon at the top of your screen. The app stays out of the Dock.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cerca l'icona graffetta in alto. L'app non compare nel Dock."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
           }
         }
       }
@@ -8007,6 +8541,95 @@
           "stringUnit": {
             "state": "translated",
             "value": "Geçmişi aç"
+          }
+        }
+      }
+    },
+    "Open with ⌘⇧V": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open with ⌘⇧V"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apri con ⌘⇧V"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open with ⌘⇧V"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open with ⌘⇧V"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open with ⌘⇧V"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open with ⌘⇧V"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open with ⌘⇧V"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open with ⌘⇧V"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open with ⌘⇧V"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open with ⌘⇧V"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open with ⌘⇧V"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open with ⌘⇧V"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open with ⌘⇧V"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open with ⌘⇧V"
           }
         }
       }
@@ -9431,6 +10054,95 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tercihler…"
+          }
+        }
+      }
+    },
+    "Press Command+Shift+V from any app to open your clipboard history.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Command+Shift+V from any app to open your clipboard history."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premi Comando+Maiusc+V da qualsiasi app per aprire la cronologia."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Command+Shift+V from any app to open your clipboard history."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Command+Shift+V from any app to open your clipboard history."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Command+Shift+V from any app to open your clipboard history."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Command+Shift+V from any app to open your clipboard history."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Command+Shift+V from any app to open your clipboard history."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Command+Shift+V from any app to open your clipboard history."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Command+Shift+V from any app to open your clipboard history."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Command+Shift+V from any app to open your clipboard history."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Command+Shift+V from any app to open your clipboard history."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Command+Shift+V from any app to open your clipboard history."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Command+Shift+V from any app to open your clipboard history."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Command+Shift+V from any app to open your clipboard history."
           }
         }
       }
@@ -12906,6 +13618,95 @@
         }
       }
     },
+    "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Testi, link, immagini e file restano sul Mac. Cerca, blocca e proteggi i contenuti sensibili."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+          }
+        }
+      }
+    },
     "The app stays in the menu bar and does not appear in the Dock. You can disable it in System Settings → General → Login Items.": {
       "extractionState": "manual",
       "localizations": {
@@ -14059,6 +14860,95 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sürüm %@ (%@)"
+          }
+        }
+      }
+    },
+    "Welcome": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benvenuto"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome"
           }
         }
       }

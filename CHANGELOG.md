@@ -5,6 +5,9 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- First-launch onboarding window after install (menu bar guide, shortcut, opens archive on continue)
+
 ### Changed
 - DMG uses classic **drag to Applications** layout (no PKG installer app)
 - App icon (`AppIcon.icns`) generated from project logo

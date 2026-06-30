@@ -25,6 +25,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     let appState = AppState()
     private(set) var statusBarController: StatusBarController?
     private let preferencesWindow = PreferencesWindowController()
+    private let onboardingWindow = OnboardingWindowController()
     private var localKeyboardMonitor: Any?
     private var globalKeyboardMonitor: Any?
 
@@ -38,9 +39,19 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         }
 
         statusBarController = StatusBarController(appState: appState)
+
+        onboardingWindow.configure(appState: appState)
+        onboardingWindow.onFinish = { [weak self] in
+            self?.statusBarController?.openArchivePanel()
+        }
+
         appState.historyStore.refreshExpiredItems()
         appState.launchAtLogin.applyDefaultIfNeeded()
         setupKeyboardShortcuts()
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) { [weak self] in
+            self?.onboardingWindow.showIfNeeded()
+        }
     }
 
     var isClipboardPanelVisible: Bool {

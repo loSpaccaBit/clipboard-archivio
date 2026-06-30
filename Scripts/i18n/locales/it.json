@@ -156,5 +156,15 @@
   "Developer": "Sviluppatore",
   "License": "Licenza",
   "Licensed under GNU General Public License v3.0 or later": "Licenza GNU General Public License v3.0 o successive",
-  "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Scegli la lingua per Appunti Archivio. Riavvia il pannello per applicare in alcune viste."
+  "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Scegli la lingua per Appunti Archivio. Riavvia il pannello per applicare in alcune viste.",
+  "Welcome": "Benvenuto",
+  "Clipboard Archive is ready": "Appunti Archivio è pronto",
+  "Installed successfully. The app runs in your menu bar and saves everything you copy.": "Installazione completata. L'app è nella menu bar e salva tutto ciò che copi.",
+  "Find it in the menu bar": "Trovala nella menu bar",
+  "Look for the paperclip icon at the top of your screen. The app stays out of the Dock.": "Cerca l'icona graffetta in alto. L'app non compare nel Dock.",
+  "Open with ⌘⇧V": "Apri con ⌘⇧V",
+  "Press Command+Shift+V from any app to open your clipboard history.": "Premi Comando+Maiusc+V da qualsiasi app per aprire la cronologia.",
+  "Copies save automatically": "Le copie si salvano da sole",
+  "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips.": "Testi, link, immagini e file restano sul Mac. Cerca, blocca e proteggi i contenuti sensibili.",
+  "Adjust privacy, vault, and shortcuts in Preferences (⌘,).": "Modifica privacy, vault e scorciatoie in Preferenze (⌘,)."
 }

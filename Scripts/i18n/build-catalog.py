@@ -117,6 +117,26 @@ def main() -> int:
         "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": (
             "Choose the language for Clipboard Archive. Restart the panel to apply in some views."
         ),
+        "Welcome": "Welcome",
+        "Clipboard Archive is ready": "Clipboard Archive is ready",
+        "Installed successfully. The app runs in your menu bar and saves everything you copy.": (
+            "Installed successfully. The app runs in your menu bar and saves everything you copy."
+        ),
+        "Find it in the menu bar": "Find it in the menu bar",
+        "Look for the paperclip icon at the top of your screen. The app stays out of the Dock.": (
+            "Look for the paperclip icon at the top of your screen. The app stays out of the Dock."
+        ),
+        "Open with ⌘⇧V": "Open with ⌘⇧V",
+        "Press Command+Shift+V from any app to open your clipboard history.": (
+            "Press Command+Shift+V from any app to open your clipboard history."
+        ),
+        "Copies save automatically": "Copies save automatically",
+        "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips.": (
+            "Text, links, images and files stay on your Mac. Search, pin, and protect sensitive clips."
+        ),
+        "Adjust privacy, vault, and shortcuts in Preferences (⌘,).": (
+            "Adjust privacy, vault, and shortcuts in Preferences (⌘,)."
+        ),
     }
     for key, en in new_keys.items():
         master.setdefault(key, {"en": en})
