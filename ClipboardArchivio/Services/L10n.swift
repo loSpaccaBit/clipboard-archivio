@@ -125,7 +125,7 @@ enum L10n {
         static var developer: String { tr("Developer") }
         static var license: String { tr("License") }
         static var licenseNotice: String {
-            tr("All rights reserved. Commercial redistribution is prohibited without written permission.")
+            tr("Licensed under PolyForm Noncommercial License 1.0.0")
         }
         static func version(_ short: String, _ build: String) -> String {
             fmt("Version %1$@ (%2$@)", short, build)

@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/platform-macOS%2026%2B-blue" alt="macOS 26+" />
   <img src="https://img.shields.io/badge/Swift-5.9-orange" alt="Swift 5.9" />
-  <img src="https://img.shields.io/badge/license-Proprietary-red" alt="Proprietary — no commercial redistribution" />
+  <img src="https://img.shields.io/badge/license-PolyForm--Noncommercial--1.0.0-blue" alt="PolyForm Noncommercial 1.0.0" />
   <img src="https://img.shields.io/badge/i18n-14%20locales-purple" alt="14 locales" />
 </p>
 
@@ -163,11 +163,10 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-**Proprietary — All Rights Reserved**
+**[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)**  
+SPDX: `PolyForm-Noncommercial-1.0.0` · Copyright © 2026 **Francesco Pio Nocerino**
 
-Copyright © 2026 **Francesco Pio Nocerino**
-
-Personal and non-commercial use is permitted. **Commercial redistribution is prohibited** without written permission from the author. See [LICENSE](LICENSE) for full terms (English / Italiano).
+Non-commercial use, modification, and distribution are permitted under the [official license terms](LICENSE). **Commercial use is not permitted** without a separate agreement with the author.
 
 ## Author
 

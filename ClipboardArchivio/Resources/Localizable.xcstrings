@@ -6231,6 +6231,95 @@
         }
       }
     },
+    "Licensed under PolyForm Noncommercial License 1.0.0": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under PolyForm Noncommercial License 1.0.0"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licenza PolyForm Noncommercial 1.0.0"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under PolyForm Noncommercial License 1.0.0"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under PolyForm Noncommercial License 1.0.0"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under PolyForm Noncommercial License 1.0.0"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under PolyForm Noncommercial License 1.0.0"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under PolyForm Noncommercial License 1.0.0"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under PolyForm Noncommercial License 1.0.0"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under PolyForm Noncommercial License 1.0.0"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under PolyForm Noncommercial License 1.0.0"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under PolyForm Noncommercial License 1.0.0"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under PolyForm Noncommercial License 1.0.0"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under PolyForm Noncommercial License 1.0.0"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under PolyForm Noncommercial License 1.0.0"
+          }
+        }
+      }
+    },
     "Link": {
       "extractionState": "manual",
       "localizations": {

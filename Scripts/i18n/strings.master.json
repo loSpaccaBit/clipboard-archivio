@@ -306,6 +306,22 @@
       "ar": "الكل",
       "tr": "Tümü"
     },
+    "All rights reserved. Commercial redistribution is prohibited without written permission.": {
+      "en": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "it": "Tutti i diritti riservati. La ridistribuzione commerciale è vietata senza autorizzazione scritta.",
+      "de": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "fr": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "es": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "pt-BR": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "ja": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "zh-Hans": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "ko": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "nl": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "pl": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "ru": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "ar": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "tr": "All rights reserved. Commercial redistribution is prohibited without written permission."
+    },
     "App": {
       "en": "App",
       "it": "App",
@@ -1105,6 +1121,22 @@
       "ru": "Язык",
       "ar": "اللغة",
       "tr": "Dil"
+    },
+    "License": {
+      "en": "License",
+      "it": "Licenza",
+      "de": "License",
+      "fr": "License",
+      "es": "License",
+      "pt-BR": "License",
+      "ja": "License",
+      "zh-Hans": "License",
+      "ko": "License",
+      "nl": "License",
+      "pl": "License",
+      "ru": "License",
+      "ar": "License",
+      "tr": "License"
     },
     "Link": {
       "en": "Link",
@@ -2530,37 +2562,21 @@
       "ar": "⌘V واحدًا تلو الآخر",
       "tr": "⌘V tek tek"
     },
-    "License": {
-      "en": "License",
-      "it": "Licenza",
-      "de": "License",
-      "fr": "License",
-      "es": "License",
-      "pt-BR": "License",
-      "ja": "License",
-      "zh-Hans": "License",
-      "ko": "License",
-      "nl": "License",
-      "pl": "License",
-      "ru": "License",
-      "ar": "License",
-      "tr": "License"
-    },
-    "All rights reserved. Commercial redistribution is prohibited without written permission.": {
-      "en": "All rights reserved. Commercial redistribution is prohibited without written permission.",
-      "it": "Tutti i diritti riservati. La ridistribuzione commerciale è vietata senza autorizzazione scritta.",
-      "de": "All rights reserved. Commercial redistribution is prohibited without written permission.",
-      "fr": "All rights reserved. Commercial redistribution is prohibited without written permission.",
-      "es": "All rights reserved. Commercial redistribution is prohibited without written permission.",
-      "pt-BR": "All rights reserved. Commercial redistribution is prohibited without written permission.",
-      "ja": "All rights reserved. Commercial redistribution is prohibited without written permission.",
-      "zh-Hans": "All rights reserved. Commercial redistribution is prohibited without written permission.",
-      "ko": "All rights reserved. Commercial redistribution is prohibited without written permission.",
-      "nl": "All rights reserved. Commercial redistribution is prohibited without written permission.",
-      "pl": "All rights reserved. Commercial redistribution is prohibited without written permission.",
-      "ru": "All rights reserved. Commercial redistribution is prohibited without written permission.",
-      "ar": "All rights reserved. Commercial redistribution is prohibited without written permission.",
-      "tr": "All rights reserved. Commercial redistribution is prohibited without written permission."
+    "Licensed under PolyForm Noncommercial License 1.0.0": {
+      "en": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "it": "Licenza PolyForm Noncommercial 1.0.0",
+      "de": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "fr": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "es": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "pt-BR": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "ja": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "zh-Hans": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "ko": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "nl": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "pl": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "ru": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "ar": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "tr": "Licensed under PolyForm Noncommercial License 1.0.0"
     }
   }
 }

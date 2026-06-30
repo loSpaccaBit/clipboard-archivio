@@ -3,6 +3,11 @@
 All notable changes to **Appunti Archivio** are documented here.  
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.5.2] - 2026-06-30
+
+### Changed
+- Adopt **[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)** (SPDX: `PolyForm-Noncommercial-1.0.0`) — official license, verbatim from polyformproject/polyform-licenses
+
 ## [1.5.1] - 2026-06-30
 
 ### Changed
@@ -50,6 +55,7 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 - Initial release: menu bar clipboard archive, vault, stack paste, 14-language i18n
 
+[1.5.2]: https://github.com/loSpaccaBit/clipboard-archivio/compare/v1.5.1...v1.5.2
 [1.5.1]: https://github.com/loSpaccaBit/clipboard-archivio/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/loSpaccaBit/clipboard-archivio/compare/v1.4.7...v1.5.0
 [1.4.7]: https://github.com/loSpaccaBit/clipboard-archivio/compare/v1.4.6...v1.4.7
