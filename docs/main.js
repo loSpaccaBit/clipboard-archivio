@@ -2,9 +2,9 @@ const REPO = "loSpaccaBit/clipboard-archivio";
 const DOWNLOAD_URL = "download/Appunti-Archivio.dmg";
 
 const DOWNLOAD_LABELS = {
-  hero: "Scarica gratis",
-  main: "Scarica per macOS",
-  footer: "Scarica Appunti Archivio",
+  hero: "Download free",
+  main: "Download for macOS",
+  footer: "Download Appunti Archivio",
 };
 
 function formatSize(bytes) {
@@ -23,14 +23,14 @@ function setDownloadLabels(tag) {
   const main = document.getElementById("download-btn");
   const footer = document.getElementById("download-footer");
 
-  if (hero) hero.textContent = tag ? `Scarica ${tag}` : DOWNLOAD_LABELS.hero;
-  if (main) main.textContent = tag ? `Scarica ${tag}` : DOWNLOAD_LABELS.main;
-  if (footer) footer.textContent = tag ? `Scarica ${tag}` : DOWNLOAD_LABELS.footer;
+  if (hero) hero.textContent = tag ? `Download ${tag}` : DOWNLOAD_LABELS.hero;
+  if (main) main.textContent = tag ? `Download ${tag}` : DOWNLOAD_LABELS.main;
+  if (footer) footer.textContent = tag ? `Download ${tag}` : DOWNLOAD_LABELS.footer;
 }
 
 async function loadLatestRelease() {
   setDownloadLabels(null);
-  setReleaseMeta("Download diretto dal sito");
+  setReleaseMeta("Direct download from this site");
 
   try {
     const [releaseRes, headRes] = await Promise.all([
@@ -44,11 +44,11 @@ async function loadLatestRelease() {
       const data = await releaseRes.json();
       const tag = data.tag_name || null;
       if (tag) {
-        parts.push(`Versione ${tag}`);
+        parts.push(`Version ${tag}`);
         setDownloadLabels(tag);
       }
       if (data.published_at) {
-        parts.push(new Date(data.published_at).toLocaleDateString("it-IT"));
+        parts.push(new Date(data.published_at).toLocaleDateString("en-US"));
       }
     }
 
@@ -57,9 +57,9 @@ async function loadLatestRelease() {
       if (size) parts.push(size);
     }
 
-    setReleaseMeta(parts.join(" · ") || "Download diretto · Appunti-Archivio.dmg");
+    setReleaseMeta(parts.join(" · ") || "Direct download · Appunti-Archivio.dmg");
   } catch {
-    setReleaseMeta("Download diretto · Appunti-Archivio.dmg");
+    setReleaseMeta("Direct download · Appunti-Archivio.dmg");
   }
 }
 
