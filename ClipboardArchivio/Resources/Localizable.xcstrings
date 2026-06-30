@@ -6231,6 +6231,95 @@
         }
       }
     },
+    "Licensed under GNU General Public License v3.0 or later": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under GNU General Public License v3.0 or later"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licenza GNU General Public License v3.0 o successive"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under GNU General Public License v3.0 or later"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under GNU General Public License v3.0 or later"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under GNU General Public License v3.0 or later"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under GNU General Public License v3.0 or later"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under GNU General Public License v3.0 or later"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under GNU General Public License v3.0 or later"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under GNU General Public License v3.0 or later"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under GNU General Public License v3.0 or later"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under GNU General Public License v3.0 or later"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under GNU General Public License v3.0 or later"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under GNU General Public License v3.0 or later"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licensed under GNU General Public License v3.0 or later"
+          }
+        }
+      }
+    },
     "Licensed under PolyForm Noncommercial License 1.0.0": {
       "extractionState": "manual",
       "localizations": {

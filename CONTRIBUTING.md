@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing. This project is maintained by **Francesco Pio Nocerino**.
 
-By submitting a pull request, you agree that your contributions may be used under the [PolyForm Noncommercial License 1.0.0](LICENSE) (SPDX: `PolyForm-Noncommercial-1.0.0`).
+By submitting a pull request, you agree that your contributions are licensed under the [GNU General Public License v3.0 or later](LICENSE) (SPDX: `GPL-3.0-or-later`).
 
 ## Getting started
 

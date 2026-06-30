@@ -110,8 +110,8 @@ def main() -> int:
         "Follow System": "Follow System",
         "Developer": "Developer",
         "License": "License",
-        "Licensed under PolyForm Noncommercial License 1.0.0": (
-            "Licensed under PolyForm Noncommercial License 1.0.0"
+        "Licensed under GNU General Public License v3.0 or later": (
+            "Licensed under GNU General Public License v3.0 or later"
         ),
         "Copyright © %1$lld %2$@": "Copyright © %1$lld %2$@",
         "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": (

@@ -3,6 +3,12 @@
 All notable changes to **Appunti Archivio** are documented here.  
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.6.0] - 2026-06-30
+
+### Changed
+- License changed to **[GNU GPL v3.0 or later](https://www.gnu.org/licenses/gpl-3.0.html)** (SPDX: `GPL-3.0-or-later`)
+- Full official license text in [COPYING](COPYING) (from gnu.org/licenses/gpl-3.0.txt)
+
 ## [1.5.2] - 2026-06-30
 
 ### Changed
@@ -55,6 +61,7 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 - Initial release: menu bar clipboard archive, vault, stack paste, 14-language i18n
 
+[1.6.0]: https://github.com/loSpaccaBit/clipboard-archivio/compare/v1.5.2...v1.6.0
 [1.5.2]: https://github.com/loSpaccaBit/clipboard-archivio/compare/v1.5.1...v1.5.2
 [1.5.1]: https://github.com/loSpaccaBit/clipboard-archivio/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/loSpaccaBit/clipboard-archivio/compare/v1.4.7...v1.5.0

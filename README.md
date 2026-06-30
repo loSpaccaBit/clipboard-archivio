@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/platform-macOS%2026%2B-blue" alt="macOS 26+" />
   <img src="https://img.shields.io/badge/Swift-5.9-orange" alt="Swift 5.9" />
-  <img src="https://img.shields.io/badge/license-PolyForm--Noncommercial--1.0.0-blue" alt="PolyForm Noncommercial 1.0.0" />
+  <img src="https://img.shields.io/badge/license-GPL--3.0-blue" alt="GPL-3.0" />
   <img src="https://img.shields.io/badge/i18n-14%20locales-purple" alt="14 locales" />
 </p>
 
@@ -163,10 +163,10 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-**[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)**  
-SPDX: `PolyForm-Noncommercial-1.0.0` · Copyright © 2026 **Francesco Pio Nocerino**
+**[GNU General Public License v3.0 or later](https://www.gnu.org/licenses/gpl-3.0.html)**  
+SPDX: `GPL-3.0-or-later` · Copyright © 2026 **Francesco Pio Nocerino**
 
-Non-commercial use, modification, and distribution are permitted under the [official license terms](LICENSE). **Commercial use is not permitted** without a separate agreement with the author.
+Free software: you may use, modify, and redistribute under GPL terms. Derivative works must remain open source under the same license. See [LICENSE](LICENSE) and [COPYING](COPYING).
 
 ## Author
 

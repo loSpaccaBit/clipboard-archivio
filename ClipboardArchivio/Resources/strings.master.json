@@ -1138,6 +1138,22 @@
       "ar": "License",
       "tr": "License"
     },
+    "Licensed under PolyForm Noncommercial License 1.0.0": {
+      "en": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "it": "Licenza PolyForm Noncommercial 1.0.0",
+      "de": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "fr": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "es": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "pt-BR": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "ja": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "zh-Hans": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "ko": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "nl": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "pl": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "ru": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "ar": "Licensed under PolyForm Noncommercial License 1.0.0",
+      "tr": "Licensed under PolyForm Noncommercial License 1.0.0"
+    },
     "Link": {
       "en": "Link",
       "it": "Link",
@@ -2562,21 +2578,21 @@
       "ar": "⌘V واحدًا تلو الآخر",
       "tr": "⌘V tek tek"
     },
-    "Licensed under PolyForm Noncommercial License 1.0.0": {
-      "en": "Licensed under PolyForm Noncommercial License 1.0.0",
-      "it": "Licenza PolyForm Noncommercial 1.0.0",
-      "de": "Licensed under PolyForm Noncommercial License 1.0.0",
-      "fr": "Licensed under PolyForm Noncommercial License 1.0.0",
-      "es": "Licensed under PolyForm Noncommercial License 1.0.0",
-      "pt-BR": "Licensed under PolyForm Noncommercial License 1.0.0",
-      "ja": "Licensed under PolyForm Noncommercial License 1.0.0",
-      "zh-Hans": "Licensed under PolyForm Noncommercial License 1.0.0",
-      "ko": "Licensed under PolyForm Noncommercial License 1.0.0",
-      "nl": "Licensed under PolyForm Noncommercial License 1.0.0",
-      "pl": "Licensed under PolyForm Noncommercial License 1.0.0",
-      "ru": "Licensed under PolyForm Noncommercial License 1.0.0",
-      "ar": "Licensed under PolyForm Noncommercial License 1.0.0",
-      "tr": "Licensed under PolyForm Noncommercial License 1.0.0"
+    "Licensed under GNU General Public License v3.0 or later": {
+      "en": "Licensed under GNU General Public License v3.0 or later",
+      "it": "Licenza GNU General Public License v3.0 o successive",
+      "de": "Licensed under GNU General Public License v3.0 or later",
+      "fr": "Licensed under GNU General Public License v3.0 or later",
+      "es": "Licensed under GNU General Public License v3.0 or later",
+      "pt-BR": "Licensed under GNU General Public License v3.0 or later",
+      "ja": "Licensed under GNU General Public License v3.0 or later",
+      "zh-Hans": "Licensed under GNU General Public License v3.0 or later",
+      "ko": "Licensed under GNU General Public License v3.0 or later",
+      "nl": "Licensed under GNU General Public License v3.0 or later",
+      "pl": "Licensed under GNU General Public License v3.0 or later",
+      "ru": "Licensed under GNU General Public License v3.0 or later",
+      "ar": "Licensed under GNU General Public License v3.0 or later",
+      "tr": "Licensed under GNU General Public License v3.0 or later"
     }
   }
 }
