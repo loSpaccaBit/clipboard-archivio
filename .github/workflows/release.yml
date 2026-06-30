@@ -1,0 +1,43 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build & Publish
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Validate i18n
+        run: python3 Scripts/i18n/validate-i18n.py
+
+      - name: Build Release
+        run: |
+          xcodegen generate
+          xcodebuild \
+            -scheme ClipboardArchivio \
+            -configuration Release \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+
+      - name: Package app
+        run: |
+          cd build/Build/Products/Release
+          zip -r ../../../../Appunti-Archivio-${{ github.ref_name }}.zip "Appunti Archivio.app"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/Appunti-Archivio-${{ github.ref_name }}.zip
+          generate_release_notes: true
