@@ -30,9 +30,9 @@ Scripts/reports/
 Appunti-Archivio-*.zip
 Appunti-Archivio-*.dmg
 Appunti-Archivio-*.pkg
-Appunti-Archivio.dmg
-Appunti-Archivio.pkg
-dist/
+/dist/
+!docs/download/
+!docs/download/Appunti-Archivio.dmg
 
 # Secrets / local config
 .env
