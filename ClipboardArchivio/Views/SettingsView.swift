@@ -152,6 +152,10 @@ struct SettingsView: View {
             Text(AppInfo.copyrightLine)
                 .font(.caption)
                 .foregroundStyle(.tertiary)
+            Text(L10n.Settings.licenseNotice)
+                .font(.caption2)
+                .foregroundStyle(.tertiary)
+                .fixedSize(horizontal: false, vertical: true)
         } header: {
             Text(L10n.Settings.about)
         }

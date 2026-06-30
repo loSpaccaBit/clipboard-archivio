@@ -109,6 +109,10 @@ def main() -> int:
         "App language": "App language",
         "Follow System": "Follow System",
         "Developer": "Developer",
+        "License": "License",
+        "All rights reserved. Commercial redistribution is prohibited without written permission.": (
+            "All rights reserved. Commercial redistribution is prohibited without written permission."
+        ),
         "Copyright © %1$lld %2$@": "Copyright © %1$lld %2$@",
         "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": (
             "Choose the language for Appunti Archivio. Restart the panel to apply in some views."

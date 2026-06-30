@@ -123,6 +123,10 @@ enum L10n {
         static var about: String { tr("About") }
         static var versionTitle: String { tr("Version") }
         static var developer: String { tr("Developer") }
+        static var license: String { tr("License") }
+        static var licenseNotice: String {
+            tr("All rights reserved. Commercial redistribution is prohibited without written permission.")
+        }
         static func version(_ short: String, _ build: String) -> String {
             fmt("Version %1$@ (%2$@)", short, build)
         }

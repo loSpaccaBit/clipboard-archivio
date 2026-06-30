@@ -154,5 +154,7 @@
   "Yesterday": "Ieri",
   "You decide what goes in the vault: right-click → Move to vault. Vault contents are encrypted on disk (secure/ folder). Touch ID to view and copy. Auto-expiry configurable below.": "Solo tu decidi cosa finisce nel vault: clic destro → Sposta nel vault. I contenuti vault sono cifrati su disco (cartella secure/). Touch ID per visualizzare e copiare. Scadenza automatica configurabile sotto.",
   "⌘V one at a time": "⌘V uno alla volta",
-  "Developer": "Sviluppatore"
+  "Developer": "Sviluppatore",
+  "License": "Licenza",
+  "All rights reserved. Commercial redistribution is prohibited without written permission.": "Tutti i diritti riservati. La ridistribuzione commerciale è vietata senza autorizzazione scritta."
 }

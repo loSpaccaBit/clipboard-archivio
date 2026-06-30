@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/platform-macOS%2026%2B-blue" alt="macOS 26+" />
   <img src="https://img.shields.io/badge/Swift-5.9-orange" alt="Swift 5.9" />
-  <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License" />
+  <img src="https://img.shields.io/badge/license-Proprietary-red" alt="Proprietary — no commercial redistribution" />
   <img src="https://img.shields.io/badge/i18n-14%20locales-purple" alt="14 locales" />
 </p>
 
@@ -163,7 +163,11 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-[MIT License](LICENSE) — Copyright © 2026 **Francesco Pio Nocerino**
+**Proprietary — All Rights Reserved**
+
+Copyright © 2026 **Francesco Pio Nocerino**
+
+Personal and non-commercial use is permitted. **Commercial redistribution is prohibited** without written permission from the author. See [LICENSE](LICENSE) for full terms (English / Italiano).
 
 ## Author
 

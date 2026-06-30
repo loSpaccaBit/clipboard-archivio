@@ -674,6 +674,22 @@
       "ar": "انسخ بـ ⌘C للبدء",
       "tr": "Başlamak için ⌘C ile kopyalayın"
     },
+    "Copyright © %1$lld %2$@": {
+      "en": "Copyright © %1$lld %2$@",
+      "it": "Copyright © %1$lld %2$@",
+      "de": "Copyright © %1$lld %2$@",
+      "fr": "Copyright © %1$lld %2$@",
+      "es": "Copyright © %1$lld %2$@",
+      "pt-BR": "Copyright © %1$lld %2$@",
+      "ja": "Copyright © %1$lld %2$@",
+      "zh-Hans": "Copyright © %1$lld %2$@",
+      "ko": "Copyright © %1$lld %2$@",
+      "nl": "Copyright © %1$lld %2$@",
+      "pl": "Copyright © %1$lld %2$@",
+      "ru": "Copyright © %1$lld %2$@",
+      "ar": "Copyright © %1$lld %2$@",
+      "tr": "Copyright © %1$lld %2$@"
+    },
     "Default pause duration": {
       "en": "Default pause duration",
       "it": "Durata pausa predefinita",
@@ -785,6 +801,22 @@
       "ru": "Detects passwords, cards and private data locally on your Mac. Touch ID is required to view vault items.",
       "ar": "Detects passwords, cards and private data locally on your Mac. Touch ID is required to view vault items.",
       "tr": "Detects passwords, cards and private data locally on your Mac. Touch ID is required to view vault items."
+    },
+    "Developer": {
+      "en": "Developer",
+      "it": "Sviluppatore",
+      "de": "Entwickler",
+      "fr": "Développeur",
+      "es": "Desarrollador",
+      "pt-BR": "Desenvolvedor",
+      "ja": "開発者",
+      "zh-Hans": "开发者",
+      "ko": "개발자",
+      "nl": "Ontwikkelaar",
+      "pl": "Deweloper",
+      "ru": "Разработчик",
+      "ar": "المطور",
+      "tr": "Geliştirici"
     },
     "Document.pdf": {
       "en": "Document.pdf",
@@ -2498,37 +2530,37 @@
       "ar": "⌘V واحدًا تلو الآخر",
       "tr": "⌘V tek tek"
     },
-    "Developer": {
-      "en": "Developer",
-      "it": "Sviluppatore",
-      "de": "Entwickler",
-      "fr": "Développeur",
-      "es": "Desarrollador",
-      "pt-BR": "Desenvolvedor",
-      "ja": "開発者",
-      "zh-Hans": "开发者",
-      "ko": "개발자",
-      "nl": "Ontwikkelaar",
-      "pl": "Deweloper",
-      "ru": "Разработчик",
-      "ar": "المطور",
-      "tr": "Geliştirici"
+    "License": {
+      "en": "License",
+      "it": "Licenza",
+      "de": "License",
+      "fr": "License",
+      "es": "License",
+      "pt-BR": "License",
+      "ja": "License",
+      "zh-Hans": "License",
+      "ko": "License",
+      "nl": "License",
+      "pl": "License",
+      "ru": "License",
+      "ar": "License",
+      "tr": "License"
     },
-    "Copyright © %1$lld %2$@": {
-      "en": "Copyright © %1$lld %2$@",
-      "it": "Copyright © %1$lld %2$@",
-      "de": "Copyright © %1$lld %2$@",
-      "fr": "Copyright © %1$lld %2$@",
-      "es": "Copyright © %1$lld %2$@",
-      "pt-BR": "Copyright © %1$lld %2$@",
-      "ja": "Copyright © %1$lld %2$@",
-      "zh-Hans": "Copyright © %1$lld %2$@",
-      "ko": "Copyright © %1$lld %2$@",
-      "nl": "Copyright © %1$lld %2$@",
-      "pl": "Copyright © %1$lld %2$@",
-      "ru": "Copyright © %1$lld %2$@",
-      "ar": "Copyright © %1$lld %2$@",
-      "tr": "Copyright © %1$lld %2$@"
+    "All rights reserved. Commercial redistribution is prohibited without written permission.": {
+      "en": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "it": "Tutti i diritti riservati. La ridistribuzione commerciale è vietata senza autorizzazione scritta.",
+      "de": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "fr": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "es": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "pt-BR": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "ja": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "zh-Hans": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "ko": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "nl": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "pl": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "ru": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "ar": "All rights reserved. Commercial redistribution is prohibited without written permission.",
+      "tr": "All rights reserved. Commercial redistribution is prohibited without written permission."
     }
   }
 }

@@ -1,21 +1,88 @@
-MIT License
+Appunti Archivio (Clipboard Archive)
+Proprietary License — Copyright © 2026 Francesco Pio Nocerino
+All Rights Reserved.
 
-Copyright (c) 2026 Francesco Pio Nocerino
+================================================================================
+ENGLISH
+================================================================================
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. OWNERSHIP
+   Appunti Archivio, including source code, binaries, assets, documentation,
+   branding, and all related materials (the "Software"), is the exclusive
+   property of Francesco Pio Nocerino.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. PERMITTED USE
+   You may:
+   (a) use the Software personally and non-commercially on devices you own
+       or control;
+   (b) build the Software from source for your own private, non-commercial use;
+   (c) view and study the source code published in the official repository.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+3. PROHIBITED WITHOUT PRIOR WRITTEN PERMISSION
+   You may not:
+   (a) sell, rent, lease, sublicense, or otherwise commercially redistribute
+       the Software or any derivative work, whether modified or unmodified;
+   (b) distribute the Software (source or binary) as part of a commercial
+       product, service, bundle, or offering;
+   (c) use the Software, its name, logo, or branding for commercial purposes;
+   (d) remove or alter copyright, license, or attribution notices.
+
+4. CONTRIBUTIONS
+   If you submit contributions to the official repository, you grant
+   Francesco Pio Nocerino a perpetual, worldwide, royalty-free license to
+   use those contributions under the same terms as this license.
+
+5. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. THE
+   AUTHOR SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM USE OF THE
+   SOFTWARE.
+
+6. TERMINATION
+   Any use outside these terms terminates your rights automatically. Upon
+   termination you must cease use and destroy all copies in your possession.
+
+7. CONTACT
+   Commercial licensing inquiries:
+   https://github.com/loSpaccaBit/clipboard-archivio
+
+================================================================================
+ITALIANO
+================================================================================
+
+1. TITOLARITÀ
+   Appunti Archivio, inclusi codice sorgente, binari, risorse, documentazione,
+   marchio e materiali correlati (il "Software"), è proprietà esclusiva di
+   Francesco Pio Nocerino.
+
+2. USO CONSENTITO
+   È consentito:
+   (a) usare il Software in modo personale e non commerciale su dispositivi di
+       tua proprietà o sotto il tuo controllo;
+   (b) compilare il Software dal sorgente per uso privato e non commerciale;
+   (c) consultare e studiare il codice sorgente nel repository ufficiale.
+
+3. VIETATO SENZA AUTORIZZAZIONE SCRITTA
+   Non è consentito:
+   (a) vendere, affittare, concedere in sublicenza o ridistribuire a scopo
+       commerciale il Software o opere derivate, modificate o meno;
+   (b) distribuire il Software (sorgente o binario) come parte di prodotti,
+       servizi, bundle o offerte commerciali;
+   (c) usare il Software, il nome, il logo o il brand per fini commerciali;
+   (d) rimuovere o alterare avvisi di copyright, licenza o attribuzione.
+
+4. CONTRIBUTI
+   Inviando contributi al repository ufficiale, concedi a Francesco Pio
+   Nocerino una licenza perpetua, mondiale e gratuita per usarli alle stesse
+   condizioni di questa licenza.
+
+5. NESSUNA GARANZIA
+   IL SOFTWARE È FORNITO "COSÌ COM'È", SENZA GARANZIE DI ALCUN TIPO. L'AUTORE
+   NON È RESPONSABILE PER DANNI DERIVANTI DALL'USO DEL SOFTWARE.
+
+6. RISOLUZIONE
+   Qualsiasi uso non conforme termina automaticamente i tuoi diritti. Dovrai
+   cessare l'uso e distruggere tutte le copie in tuo possesso.
+
+7. CONTATTI
+   Per licenze commerciali:
+   https://github.com/loSpaccaBit/clipboard-archivio
