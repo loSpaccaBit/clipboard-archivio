@@ -3,6 +3,12 @@
 All notable changes to **Appunti Archivio** are documented here.  
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.6.1] - 2026-06-30
+
+### Added
+- SVG logo (`docs/assets/logo.svg`) in README and landing page
+- Landing page at `docs/` with download section and GitHub Pages workflow
+
 ## [1.6.0] - 2026-06-30
 
 ### Changed
@@ -61,6 +67,7 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 - Initial release: menu bar clipboard archive, vault, stack paste, 14-language i18n
 
+[1.6.1]: https://github.com/loSpaccaBit/clipboard-archivio/compare/v1.6.0...v1.6.1
 [1.6.0]: https://github.com/loSpaccaBit/clipboard-archivio/compare/v1.5.2...v1.6.0
 [1.5.2]: https://github.com/loSpaccaBit/clipboard-archivio/compare/v1.5.1...v1.5.2
 [1.5.1]: https://github.com/loSpaccaBit/clipboard-archivio/compare/v1.5.0...v1.5.1

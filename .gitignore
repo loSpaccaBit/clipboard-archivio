@@ -27,6 +27,7 @@ venv/
 # Local reports & scratch
 Scripts/reports/
 *.log
+Appunti-Archivio-*.zip
 
 # Secrets / local config
 .env

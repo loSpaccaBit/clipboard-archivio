@@ -1,7 +1,17 @@
 # Appunti Archivio
 
 <p align="center">
+  <a href="https://lospaccabit.github.io/clipboard-archivio/">
+    <img src="docs/assets/logo.svg" alt="Appunti Archivio logo" width="128" height="128">
+  </a>
+</p>
+
+<p align="center">
   <strong>Clipboard Archive</strong> — a native macOS menu bar app that saves, searches, and protects your clipboard history.
+</p>
+
+<p align="center">
+  <a href="https://lospaccabit.github.io/clipboard-archivio/"><strong>Website & Download</strong></a>
 </p>
 
 <p align="center">
@@ -34,6 +44,12 @@ Built with **SwiftUI**, **Liquid Glass**, and a performance-first architecture: 
 | **Stack paste** | Multi-select → merge or sequential paste |
 | **i18n** | 14 languages including RTL (Arabic), in-app language override |
 | **Performance** | ~74 MB RAM at idle, lazy UI, background saves |
+
+## Download
+
+- **Landing page:** [lospaccabit.github.io/clipboard-archivio](https://lospaccabit.github.io/clipboard-archivio/)
+- **Latest release:** [GitHub Releases](https://github.com/loSpaccaBit/clipboard-archivio/releases/latest)
+- **Build from source:** `make install`
 
 ## Screenshots
 

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appunti Archivio — Clipboard Archive per macOS</title>
+  <meta name="description" content="App nativa per la menu bar di macOS: cronologia appunti, vault cifrato, 14 lingue. Sviluppata da Francesco Pio Nocerino.">
+  <meta property="og:title" content="Appunti Archivio">
+  <meta property="og:description" content="La tua cronologia appunti su macOS — ricerca, pin, vault e Liquid Glass.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo.svg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <img src="assets/logo.svg" width="42" height="42" alt="">
+        <span>Appunti Archivio</span>
+      </a>
+      <nav class="nav-links" aria-label="Principale">
+        <a href="#features">Funzioni</a>
+        <a href="#download">Download</a>
+        <a href="https://github.com/loSpaccaBit/clipboard-archivio">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div>
+        <p class="eyebrow">macOS 26+ · Menu bar · GPL-3.0</p>
+        <h1>La cronologia appunti che resta sul tuo Mac.</h1>
+        <p class="lead">
+          Salva testo, immagini e file. Cerca in un attimo, blocca gli elementi importanti
+          e proteggi i dati sensibili in un vault cifrato con Touch ID.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" id="download-btn" href="#download">Scarica per macOS</a>
+          <a class="btn btn-secondary" href="https://github.com/loSpaccaBit/clipboard-archivio">Codice sorgente</a>
+        </div>
+        <p class="meta" id="release-meta">Caricamento ultima versione…</p>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-logo" src="assets/logo.svg" width="320" height="320" alt="Logo Appunti Archivio">
+        <div class="glass-card">
+          <h3>Apri l'archivio</h3>
+          <p>Premi <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>V</kbd> da qualsiasi app.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container">
+      <h2 class="section-title">Tutto quello che ti serve, sempre a portata di mano</h2>
+      <p class="section-lead">
+        Un pannello Liquid Glass nella menu bar. Nessuna icona nel Dock, nessun rumore —
+        solo la tua cronologia quando ti serve.
+      </p>
+      <div class="features">
+        <article class="feature">
+          <h3>Cronologia intelligente</h3>
+          <p>Fino a 500 elementi, ricerca full-text, sezioni per app, oggi, pin e tipo di contenuto.</p>
+        </article>
+        <article class="feature">
+          <h3>Vault sicuro</h3>
+          <p>Rilevamento locale di dati sensibili, cifratura AES-GCM su disco e Touch ID per sbloccare.</p>
+        </article>
+        <article class="feature">
+          <h3>Prestazioni</h3>
+          <p>Pannello lazy, salvataggio debounced, cache miniature e riferimenti ai file senza duplicazioni.</p>
+        </article>
+        <article class="feature">
+          <h3>Stack paste</h3>
+          <p>Seleziona più clip e incollale unite o in sequenza con un flusso guidato.</p>
+        </article>
+        <article class="feature">
+          <h3>14 lingue</h3>
+          <p>Italiano, English, Deutsch, Français, Español, 日本語, العربية e altre — con override in-app.</p>
+        </article>
+        <article class="feature">
+          <h3>Privacy</h3>
+          <p>Pausa salvataggio, retention automatica, cronologia cifrata opzionale. Tutto on-device.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="section-title">Scorciatoie</h2>
+      <div class="shortcuts">
+        <div class="shortcut"><kbd>⌘⇧V</kbd><span>Apri archivio</span></div>
+        <div class="shortcut"><kbd>⌘,</kbd><span>Preferenze</span></div>
+        <div class="shortcut"><kbd>⌘F</kbd><span>Cerca (pannello aperto)</span></div>
+      </div>
+    </section>
+
+    <section id="download" class="container">
+      <h2 class="section-title">Scarica Appunti Archivio</h2>
+      <p class="section-lead">Build Release firmata localmente o artifact dalla release GitHub. Richiede macOS 26 o successivo.</p>
+      <div class="download-panel">
+        <div>
+          <a class="btn btn-primary" id="download-zip" href="https://github.com/loSpaccaBit/clipboard-archivio/releases/latest">Scarica ultima release</a>
+          <p class="meta" style="margin-top: 1rem;">
+            Oppure compila dal sorgente con <code>make install</code>
+          </p>
+          <ul>
+            <li>Apple Silicon e Intel (arm64 build)</li>
+            <li>Spostare l'app in <strong>Applicazioni</strong></li>
+            <li>Al primo avvio: tasto destro → Apri se Gatekeeper blocca l'app</li>
+          </ul>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <strong>Scarica</strong>
+              <p>Prendi lo zip <code>Appunti-Archivio-*.zip</code> dalla pagina Releases.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <strong>Installa</strong>
+              <p>Trascina <em>Appunti Archivio.app</em> in Applicazioni.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <strong>Usa</strong>
+              <p>Cerca la graffetta nella menu bar. Premi <kbd>⌘⇧V</kbd> per aprire.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Appunti Archivio</strong><br>
+        Copyright © 2026 Francesco Pio Nocerino<br>
+        Licenza <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPL v3.0+</a>
+      </div>
+      <div>
+        <a href="https://github.com/loSpaccaBit/clipboard-archivio">Repository</a> ·
+        <a href="https://github.com/loSpaccaBit/clipboard-archivio/issues">Segnala un bug</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
