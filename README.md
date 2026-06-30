@@ -48,10 +48,10 @@ Built with **SwiftUI**, **Liquid Glass**, and a performance-first architecture: 
 ## Download
 
 - **Landing page:** [lospaccabit.github.io/clipboard-archivio](https://lospaccabit.github.io/clipboard-archivio/)
-- **Direct download:** [Clipboard-Archive.dmg](https://github.com/loSpaccaBit/clipboard-archivio/releases/latest/download/Clipboard-Archive.dmg) — open the DMG and double-click **Install Clipboard Archive** (or drag the app to Applications)
+- **Direct download:** [Clipboard-Archive.dmg](https://github.com/loSpaccaBit/clipboard-archivio/releases/latest/download/Clipboard-Archive.dmg) — open the DMG and double-click **Install Clipboard Archive** (standard macOS PKG installer)
 - **All releases:** [GitHub Releases](https://github.com/loSpaccaBit/clipboard-archivio/releases/latest)
 - **Build from source:** `make install`
-- **Package for release:** `make package` → `dist/Clipboard-Archive.dmg` (drag-to-Applications). Optional PKG: `make pkg`
+- **Package for release:** `make package` → `dist/Clipboard-Archive.dmg` (PKG install app). Standalone PKG for MDM: `make pkg`
 
 ## Screenshots
 
