@@ -33,18 +33,25 @@ targets:
         excludes:
           - Resources/**
     resources:
+      - path: ClipboardArchivio/Resources/AppIcon.icns
       - path: ClipboardArchivio/Resources/strings.master.json
       - path: ClipboardArchivio/Resources/Localizable.xcstrings
     postbuildScripts:
-      - name: Bundle Localization Data
+      - name: Bundle App Resources
         script: |
-          DEST="${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources"
+          APP="${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app"
+          DEST="${APP}/Contents/Resources"
+          PLIST="${APP}/Contents/Info.plist"
           mkdir -p "${DEST}"
           cp "${SRCROOT}/Scripts/i18n/strings.master.json" "${DEST}/"
+          cp "${SRCROOT}/ClipboardArchivio/Resources/AppIcon.icns" "${DEST}/"
+          /usr/libexec/PlistBuddy -c "Delete :CFBundleIconFile" "${PLIST}" 2>/dev/null || true
+          /usr/libexec/PlistBuddy -c "Add :CFBundleIconFile string AppIcon" "${PLIST}"
         basedOnDependencyAnalysis: false
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.clipboardarchivio.app
       PRODUCT_NAME: Clipboard Archive
+      ASSETCATALOG_COMPILER_APPICON_NAME: ""
       INFOPLIST_KEY_LSUIElement: YES
       INFOPLIST_KEY_CFBundleDisplayName: Clipboard Archive
       INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2026 Francesco Pio Nocerino"

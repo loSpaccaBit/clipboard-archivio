@@ -3,10 +3,10 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 APP_NAME="Clipboard Archive"
-INSTALLER_APP="Install Clipboard Archive.app"
+APP_BUNDLE="$APP_NAME.app"
 VERSION="${1:-}"
 VERSION="${VERSION#v}"
-APP_PATH="${2:-$ROOT/build/Build/Products/Release/$APP_NAME.app}"
+APP_PATH="${2:-$ROOT/build/Build/Products/Release/$APP_BUNDLE}"
 
 if [[ ! -d "$APP_PATH" ]]; then
   echo "error: app bundle not found at $APP_PATH" >&2
@@ -20,67 +20,14 @@ fi
 
 OUT_DIR="$ROOT/dist"
 mkdir -p "$OUT_DIR"
-PKG_PATH="$OUT_DIR/Clipboard-Archive.pkg"
-
-if [[ ! -f "$PKG_PATH" ]]; then
-  chmod +x "$ROOT/Scripts/package-installer.sh"
-  "$ROOT/Scripts/package-installer.sh" "$VERSION" "$APP_PATH" >/dev/null
-fi
 
 WORK="$(mktemp -d)"
 trap 'rm -rf "$WORK" "$RW_DMG"' EXIT
 
-INSTALLER_STAGING="$WORK/installer-app"
-mkdir -p "$INSTALLER_STAGING/$INSTALLER_APP/Contents/MacOS"
-mkdir -p "$INSTALLER_STAGING/$INSTALLER_APP/Contents/Resources"
-cp "$PKG_PATH" "$INSTALLER_STAGING/$INSTALLER_APP/Contents/Resources/Clipboard-Archive.pkg"
-
-cat >"$INSTALLER_STAGING/$INSTALLER_APP/Contents/Info.plist" <<'PLIST'
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-  <key>CFBundleExecutable</key>
-  <string>install</string>
-  <key>CFBundleIdentifier</key>
-  <string>com.clipboardarchivio.installer</string>
-  <key>CFBundleName</key>
-  <string>Install Clipboard Archive</string>
-  <key>CFBundlePackageType</key>
-  <string>APPL</string>
-  <key>CFBundleShortVersionString</key>
-  <string>1.0</string>
-  <key>CFBundleVersion</key>
-  <string>1</string>
-  <key>LSMinimumSystemVersion</key>
-  <string>26.0</string>
-</dict>
-</plist>
-PLIST
-
-cat >"$INSTALLER_STAGING/$INSTALLER_APP/Contents/MacOS/install" <<'SCRIPT'
-#!/usr/bin/env bash
-set -euo pipefail
-
-APP_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-PKG="$APP_ROOT/Resources/Clipboard-Archive.pkg"
-
-if [[ ! -f "$PKG" ]]; then
-  osascript -e 'display alert "Installation package not found." buttons {"OK"} default button 1'
-  exit 1
-fi
-
-if /usr/sbin/installer -pkg "$PKG" -target /; then
-  osascript -e 'display notification "Clipboard Archive has been installed in Applications." with title "Installation complete"'
-  VOLUME="$(df "$APP_ROOT" | awk 'END {print $NF}')"
-  if [[ "$VOLUME" == /Volumes/* ]]; then
-    hdiutil detach "$VOLUME" -quiet 2>/dev/null || true
-  fi
-else
-  open "$PKG"
-fi
-SCRIPT
-chmod +x "$INSTALLER_STAGING/$INSTALLER_APP/Contents/MacOS/install"
+STAGING="$WORK/dmg-root"
+mkdir -p "$STAGING"
+ditto "$APP_PATH" "$STAGING/$APP_BUNDLE"
+ln -s /Applications "$STAGING/Applications"
 
 RW_DMG="$(mktemp -t clipboard-archive-rw).dmg"
 DMG_PATH="$OUT_DIR/Clipboard-Archive.dmg"
@@ -88,10 +35,11 @@ VERSIONED_DMG="$OUT_DIR/Clipboard-Archive-v${VERSION}.dmg"
 MOUNT_DIR="/Volumes/$APP_NAME"
 
 hdiutil detach "$MOUNT_DIR" -quiet 2>/dev/null || true
-hdiutil create -size 48m -fs HFS+ -volname "$APP_NAME" "$RW_DMG" >/dev/null
+hdiutil create -size 64m -fs HFS+ -volname "$APP_NAME" "$RW_DMG" >/dev/null
 hdiutil attach "$RW_DMG" -nobrowse -readwrite >/dev/null
 
-ditto "$INSTALLER_STAGING/$INSTALLER_APP" "$MOUNT_DIR/$INSTALLER_APP"
+ditto "$STAGING/$APP_BUNDLE" "$MOUNT_DIR/$APP_BUNDLE"
+ln -s /Applications "$MOUNT_DIR/Applications"
 
 bless --folder "$MOUNT_DIR" --openfolder "$MOUNT_DIR" 2>/dev/null || true
 
@@ -102,19 +50,24 @@ tell application "Finder"
     set current view of container window to icon view
     set toolbar visible of container window to false
     set statusbar visible of container window to false
-    set bounds of container window to {140, 100, 640, 380}
+    set bounds of container window to {200, 120, 760, 420}
     set viewOptions to the icon view options of container window
     set arrangement of viewOptions to not arranged
-    set icon size of viewOptions to 120
-    set position of item "$INSTALLER_APP" of container window to {250, 120}
+    set icon size of viewOptions to 96
+    set position of item "$APP_BUNDLE" of container window to {150, 185}
+    set position of item "Applications" of container window to {470, 185}
+    close
+    open
+    update without registering applications
+    delay 1
     close
   end tell
 end tell
 EOF
 
 hdiutil detach "$MOUNT_DIR" >/dev/null
+rm -f "$DMG_PATH"
 hdiutil convert "$RW_DMG" -format UDZO -o "$DMG_PATH" >/dev/null
 cp "$DMG_PATH" "$VERSIONED_DMG"
-rm -f "$RW_DMG"
 
 echo "$DMG_PATH"

@@ -6,9 +6,10 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- DMG uses classic **drag to Applications** layout (no PKG installer app)
+- App icon (`AppIcon.icns`) generated from project logo
 - Product renamed to **Clipboard Archive** (display name, `.app` bundle, DMG/PKG assets, landing page)
-- Release assets: `Clipboard-Archive.dmg` and `Clipboard-Archive.pkg`
-- Installer app: **Install Clipboard Archive**
+- Release assets: `Clipboard-Archive.dmg` and optional `Clipboard-Archive.pkg` (`make pkg`)
 
 ### Fixed
 - CI / Release workflows: compile on GitHub runners (SDK 15) via `GLASS_SDK_FALLBACK` while local builds keep native Liquid Glass
