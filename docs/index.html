@@ -14,12 +14,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+
+  <div class="page-noise" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="#">
+      <a class="brand" href="#" aria-label="Appunti Archivio — inizio pagina">
         <img src="assets/logo.svg" width="42" height="42" alt="">
         <span>Appunti Archivio</span>
       </a>
@@ -36,15 +40,25 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero container">
-      <div class="hero-copy">
-        <p class="eyebrow">macOS 26+ · Menu bar · GPL-3.0</p>
-        <h1>La cronologia appunti che resta sul tuo Mac.</h1>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          macOS 26+ · Menu bar · GPL-3.0
+        </p>
+        <h1>La cronologia appunti che <em>resta</em> sul tuo Mac.</h1>
         <p class="lead">
           Salva testo, immagini e file. Cerca in un attimo, blocca gli elementi importanti
           e proteggi i dati sensibili in un vault cifrato con Touch ID.
         </p>
+
+        <div class="stats-strip" aria-label="Metriche principali">
+          <div class="stat"><strong>500</strong><span>elementi max</span></div>
+          <div class="stat"><strong>14</strong><span>lingue</span></div>
+          <div class="stat"><strong>~74 MB</strong><span>RAM a riposo</span></div>
+        </div>
+
         <div class="download-card">
           <div class="download-card-head">
             <img src="assets/logo.svg" width="52" height="52" alt="">
@@ -59,16 +73,35 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Scarica per macOS
           </a>
-          <p class="download-hint">Download diretto · nessun reindirizzamento a GitHub</p>
+          <p class="download-hint">Download diretto · nessun reindirizzamento</p>
         </div>
+
         <div class="cta-row">
           <a class="btn btn-secondary" href="https://github.com/loSpaccaBit/clipboard-archivio">Codice sorgente</a>
           <a class="btn btn-secondary" href="#install">Come si installa</a>
         </div>
       </div>
-      <div class="hero-visual">
+
+      <div class="hero-visual reveal" style="--reveal-delay: 120ms">
         <div class="hero-glow" aria-hidden="true"></div>
-        <img class="hero-logo" src="assets/logo.svg" width="320" height="320" alt="Logo Appunti Archivio">
+        <div class="panel-mock" role="img" aria-label="Anteprima del pannello archivio appunti con ricerca e cronologia">
+          <div class="panel-mock-chrome">
+            <span class="panel-dot"></span>
+            <span class="panel-dot"></span>
+            <span class="panel-dot"></span>
+            <span class="panel-title">Appunti Archivio</span>
+          </div>
+          <div class="panel-mock-search">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Cerca nella cronologia…
+          </div>
+          <ul class="panel-mock-list">
+            <li><span class="pill pin">Pin</span> Chiave API progetto staging</li>
+            <li><span class="pill">Oggi</span> https://github.com/loSpaccaBit</li>
+            <li><span class="pill">Safari</span> Note riunione — Q3 roadmap</li>
+            <li><span class="pill vault">Vault</span> ••••••••••••4242</li>
+          </ul>
+        </div>
         <div class="glass-card">
           <h3>Apri l'archivio</h3>
           <p>Premi <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>V</kbd> da qualsiasi app.</p>
@@ -77,79 +110,118 @@
     </section>
 
     <section id="features" class="container">
-      <h2 class="section-title">Tutto quello che ti serve, sempre a portata di mano</h2>
-      <p class="section-lead">
-        Un pannello Liquid Glass nella menu bar. Nessuna icona nel Dock, nessun rumore —
-        solo la tua cronologia quando ti serve.
-      </p>
-      <div class="features">
-        <article class="feature">
+      <div class="section-head reveal">
+        <p class="section-kicker">Funzioni</p>
+        <h2 class="section-title">Tutto a portata di graffetta</h2>
+        <p class="section-lead">
+          Un pannello Liquid Glass nella menu bar. Nessuna icona nel Dock —
+          solo la tua cronologia quando ti serve.
+        </p>
+      </div>
+
+      <div class="bento">
+        <article class="bento-card bento-wide reveal">
+          <div class="bento-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h10M4 17h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
           <h3>Cronologia intelligente</h3>
           <p>Fino a 500 elementi, ricerca full-text, sezioni per app, oggi, pin e tipo di contenuto.</p>
         </article>
-        <article class="feature">
+        <article class="bento-card reveal" style="--reveal-delay: 60ms">
+          <div class="bento-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 11V8a4 4 0 118 0v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
           <h3>Vault sicuro</h3>
-          <p>Rilevamento locale di dati sensibili, cifratura AES-GCM su disco e Touch ID per sbloccare.</p>
+          <p>Rilevamento locale, cifratura AES-GCM e Touch ID per sbloccare.</p>
         </article>
-        <article class="feature">
+        <article class="bento-card reveal" style="--reveal-delay: 120ms">
+          <div class="bento-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 10-14h-7l0-6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
           <h3>Prestazioni</h3>
-          <p>Pannello lazy, salvataggio debounced, cache miniature e riferimenti ai file senza duplicazioni.</p>
+          <p>Pannello lazy, salvataggio debounced e cache miniature.</p>
         </article>
-        <article class="feature">
+        <article class="bento-card reveal" style="--reveal-delay: 80ms">
+          <div class="bento-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
           <h3>Stack paste</h3>
-          <p>Seleziona più clip e incollale unite o in sequenza con un flusso guidato.</p>
+          <p>Seleziona più clip e incollale unite o in sequenza.</p>
         </article>
-        <article class="feature">
+        <article class="bento-card reveal" style="--reveal-delay: 140ms">
+          <div class="bento-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
           <h3>14 lingue</h3>
-          <p>Italiano, English, Deutsch, Français, Español, 日本語, العربية e altre — con override in-app.</p>
+          <p>Italiano, English, Deutsch, 日本語, العربية e altre.</p>
         </article>
-        <article class="feature">
-          <h3>Privacy</h3>
-          <p>Pausa salvataggio, retention automatica, cronologia cifrata opzionale. Tutto on-device.</p>
+        <article class="bento-card bento-accent reveal" style="--reveal-delay: 100ms">
+          <div class="bento-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 4v5c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V7l7-4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Privacy on-device</h3>
+          <p>Pausa salvataggio, retention automatica, cronologia cifrata opzionale. Zero cloud.</p>
         </article>
       </div>
     </section>
 
     <section class="container">
-      <h2 class="section-title">Scorciatoie</h2>
-      <div class="shortcuts">
-        <div class="shortcut"><kbd>⌘⇧V</kbd><span>Apri archivio</span></div>
-        <div class="shortcut"><kbd>⌘,</kbd><span>Preferenze</span></div>
-        <div class="shortcut"><kbd>⌘F</kbd><span>Cerca (pannello aperto)</span></div>
+      <div class="section-head reveal">
+        <p class="section-kicker">Tastiera</p>
+        <h2 class="section-title">Scorciatoie</h2>
+      </div>
+      <div class="shortcuts reveal">
+        <div class="shortcut">
+          <kbd>⌘⇧V</kbd>
+          <span>Apri archivio</span>
+        </div>
+        <div class="shortcut">
+          <kbd>⌘,</kbd>
+          <span>Preferenze</span>
+        </div>
+        <div class="shortcut">
+          <kbd>⌘F</kbd>
+          <span>Cerca nel pannello</span>
+        </div>
       </div>
     </section>
 
     <section id="install" class="container">
-      <h2 class="section-title">Installazione in 3 passi</h2>
-      <p class="section-lead">
-        Scarica il DMG da questa pagina. L'installer di sistema copia
-        <strong>Appunti Archivio.app</strong> in <strong>Applicazioni</strong>.
-      </p>
+      <div class="section-head reveal">
+        <p class="section-kicker">Download</p>
+        <h2 class="section-title">Installazione in 3 passi</h2>
+        <p class="section-lead">
+          Scarica il DMG da questa pagina. L'installer copia
+          <strong>Appunti Archivio.app</strong> in <strong>Applicazioni</strong>.
+        </p>
+      </div>
+
       <div class="install-layout">
         <div class="install-steps">
-          <article class="install-step">
-            <div class="install-step-num">1</div>
+          <article class="install-step reveal">
+            <div class="install-step-num" aria-hidden="true">1</div>
             <div>
               <h3>Scarica il DMG</h3>
               <p>Clicca <strong>Scarica per macOS</strong>. Il file <code>Appunti-Archivio.dmg</code> parte subito.</p>
             </div>
           </article>
-          <article class="install-step">
-            <div class="install-step-num">2</div>
+          <article class="install-step reveal" style="--reveal-delay: 80ms">
+            <div class="install-step-num" aria-hidden="true">2</div>
             <div>
               <h3>Avvia l'installer</h3>
               <p>Apri il DMG e fai doppio clic su <em>Installa Appunti Archivio</em>. Conferma nell'installer macOS.</p>
             </div>
           </article>
-          <article class="install-step">
-            <div class="install-step-num">3</div>
+          <article class="install-step reveal" style="--reveal-delay: 160ms">
+            <div class="install-step-num" aria-hidden="true">3</div>
             <div>
               <h3>Apri dalla menu bar</h3>
               <p>Trova la graffetta in alto. Premi <kbd>⌘⇧V</kbd> per aprire l'archivio.</p>
             </div>
           </article>
         </div>
-        <aside class="install-aside">
+
+        <aside class="install-aside reveal" style="--reveal-delay: 120ms">
           <a class="btn btn-primary btn-block js-download" id="download-app"
              href="download/Appunti-Archivio.dmg"
              download="Appunti-Archivio.dmg">
@@ -159,8 +231,8 @@
           <ul class="install-notes">
             <li>Apple Silicon (arm64)</li>
             <li>macOS 26 o successivo</li>
-            <li>Se Gatekeeper blocca l'app: tasto destro → <em>Apri</em></li>
-            <li>Sviluppatore: <a href="https://github.com/loSpaccaBit">Francesco Pio Nocerino</a></li>
+            <li>Gatekeeper: tasto destro → <em>Apri</em></li>
+            <li>Di <a href="https://github.com/loSpaccaBit">Francesco Pio Nocerino</a></li>
           </ul>
         </aside>
       </div>
@@ -175,13 +247,20 @@
         Licenza <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPL v3.0+</a>
       </div>
       <div class="footer-links">
-        <a href="download/Appunti-Archivio.dmg" class="js-download" download="Appunti-Archivio.dmg">DMG</a> ·
+        <a href="download/Appunti-Archivio.dmg" download="Appunti-Archivio.dmg">DMG</a> ·
         <a href="https://github.com/loSpaccaBit/clipboard-archivio">Repository</a> ·
         <a href="https://github.com/loSpaccaBit/clipboard-archivio/issues">Segnala un bug</a>
       </div>
     </div>
   </footer>
 
-  <script src="main.js?v=6"></script>
+  <div class="mobile-dock" role="region" aria-label="Download rapido">
+    <a class="btn btn-primary js-download" href="download/Appunti-Archivio.dmg" download="Appunti-Archivio.dmg">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Scarica DMG
+    </a>
+  </div>
+
+  <script src="main.js?v=7"></script>
 </body>
 </html>
