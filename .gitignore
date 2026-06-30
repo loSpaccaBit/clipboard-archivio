@@ -1,0 +1,39 @@
+# Xcode / Swift
+build/
+DerivedData/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+**/xcuserdata/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Python (i18n tooling)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Local reports & scratch
+Scripts/reports/
+*.log
+
+# Secrets / local config
+.env
+.env.*
+*.local
+
+# IDE
+.idea/
+*.swp
+*~
