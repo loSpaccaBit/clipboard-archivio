@@ -340,7 +340,7 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.6.3;
+				MARKETING_VERSION = 1.6.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.clipboardarchivio.app;
 				PRODUCT_NAME = "Clipboard Archive";
 				SDKROOT = macosx;
@@ -364,7 +364,7 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.6.3;
+				MARKETING_VERSION = 1.6.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.clipboardarchivio.app;
 				PRODUCT_NAME = "Clipboard Archive";
 				SDKROOT = macosx;
