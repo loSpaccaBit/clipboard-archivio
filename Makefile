@@ -35,6 +35,9 @@ package: build
 	chmod +x Scripts/package-installer.sh Scripts/package-dmg.sh
 	Scripts/package-installer.sh
 	Scripts/package-dmg.sh
+	mkdir -p docs/download
+	cp dist/Appunti-Archivio.dmg docs/download/Appunti-Archivio.dmg
+	@echo "Copied DMG to docs/download/ for GitHub Pages direct download"
 
 open:
 	open "$(INSTALL_DIR)/$(APP_NAME).app"

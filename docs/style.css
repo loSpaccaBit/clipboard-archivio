@@ -104,6 +104,20 @@ a:hover {
   color: var(--text);
 }
 
+.nav-download {
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--text) !important;
+  border: 1px solid rgba(77, 141, 255, 0.35);
+  font-weight: 600;
+}
+
+.nav-download:hover {
+  background: rgba(77, 141, 255, 0.28);
+  text-decoration: none !important;
+}
+
 .hero {
   padding: 5.5rem 0 4rem;
   display: grid;
