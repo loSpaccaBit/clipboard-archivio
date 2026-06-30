@@ -7,9 +7,10 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 - First-launch onboarding window after install (menu bar guide, shortcut, opens archive on continue)
+- DMG **Install Clipboard Archive** helper — copies to Applications, launches the app, and ejects the disk (onboarding starts on first open)
 
 ### Changed
-- DMG uses classic **drag to Applications** layout (no PKG installer app)
+- DMG layout: install helper + drag-to-Applications (no PKG installer app)
 - App icon (`AppIcon.icns`) generated from project logo
 - Product renamed to **Clipboard Archive** (display name, `.app` bundle, DMG/PKG assets, landing page)
 - Release assets: `Clipboard-Archive.dmg` and optional `Clipboard-Archive.pkg` (`make pkg`)

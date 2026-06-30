@@ -15,7 +15,7 @@ help:
 	@echo "  make icon       Generate AppIcon.icns from docs/assets/logo.svg"
 	@echo "  make build      Build Release"
 	@echo "  make install    Build and copy to ~/Applications"
-	@echo "  make package    Build and create drag-to-Applications DMG"
+	@echo "  make package    Build and create DMG (install helper + drag-to-Applications)"
 	@echo "  make pkg        Build optional .pkg installer (maintainers)"
 	@echo "  make open       Launch installed app"
 	@echo "  make i18n       Rebuild localization catalog"

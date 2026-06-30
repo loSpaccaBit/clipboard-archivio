@@ -30,7 +30,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     private var globalKeyboardMonitor: Any?
 
     func applicationDidFinishLaunching(_ notification: Notification) {
-        NSApp.setActivationPolicy(.accessory)
+        if OnboardingStore.isCompleted {
+            NSApp.setActivationPolicy(.accessory)
+        } else {
+            NSApp.setActivationPolicy(.regular)
+            NSApp.activate(ignoringOtherApps: true)
+        }
 
         preferencesWindow.configure(appState: appState)
 
@@ -42,7 +47,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
         onboardingWindow.configure(appState: appState)
         onboardingWindow.onFinish = { [weak self] in
-            self?.statusBarController?.openArchivePanel()
+            self?.finishFirstLaunchOnboarding()
         }
 
         appState.historyStore.refreshExpiredItems()
@@ -61,6 +66,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     func showPreferences() {
         statusBarController?.closePanelIfVisible()
         preferencesWindow.show(relativeTo: statusBarController?.clipboardPanelWindow)
+    }
+
+    private func finishFirstLaunchOnboarding() {
+        NSApp.setActivationPolicy(.accessory)
+        statusBarController?.openArchivePanel()
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
