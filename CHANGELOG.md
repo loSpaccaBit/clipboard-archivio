@@ -3,6 +3,13 @@
 All notable changes to **Appunti Archivio** are documented here.  
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.6.3] - 2026-06-30
+
+### Changed
+- DMG installer with **Installa Appunti Archivio.app** — launches PKG that copies the app to `/Applications`
+- Landing page uses **direct download** (`releases/latest/download/Appunti-Archivio.dmg`)
+- Stable release assets: `Appunti-Archivio.dmg` and `Appunti-Archivio.pkg`
+
 ## [1.6.2] - 2026-06-30
 
 ### Changed

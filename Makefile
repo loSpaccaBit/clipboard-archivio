@@ -32,7 +32,8 @@ install: build
 	@echo "Installed to $(INSTALL_DIR)/$(APP_NAME).app"
 
 package: build
-	chmod +x Scripts/package-dmg.sh
+	chmod +x Scripts/package-installer.sh Scripts/package-dmg.sh
+	Scripts/package-installer.sh
 	Scripts/package-dmg.sh
 
 open:

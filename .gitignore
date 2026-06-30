@@ -29,6 +29,9 @@ Scripts/reports/
 *.log
 Appunti-Archivio-*.zip
 Appunti-Archivio-*.dmg
+Appunti-Archivio-*.pkg
+Appunti-Archivio.dmg
+Appunti-Archivio.pkg
 dist/
 
 # Secrets / local config

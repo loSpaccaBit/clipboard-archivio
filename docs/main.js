@@ -1,9 +1,20 @@
 const REPO = "loSpaccaBit/clipboard-archivio";
+const DIRECT_DMG =
+  "https://github.com/loSpaccaBit/clipboard-archivio/releases/latest/download/Appunti-Archivio.dmg";
+
+function applyDownloadLinks(url, label) {
+  for (const id of ["download-btn", "download-app"]) {
+    const el = document.getElementById(id);
+    if (!el) continue;
+    el.href = url;
+    el.setAttribute("download", "Appunti-Archivio.dmg");
+    if (label) el.textContent = label;
+  }
+}
 
 async function loadLatestRelease() {
   const meta = document.getElementById("release-meta");
-  const downloadBtn = document.getElementById("download-app");
-  const heroBtn = document.getElementById("download-btn");
+  applyDownloadLinks(DIRECT_DMG, "Scarica per macOS");
 
   try {
     const res = await fetch(`https://api.github.com/repos/${REPO}/releases/latest`);
@@ -12,27 +23,19 @@ async function loadLatestRelease() {
     const data = await res.json();
     const tag = data.tag_name || "latest";
     const assets = data.assets || [];
-    const asset =
-      assets.find((a) => a.name.endsWith(".dmg")) ||
-      assets.find((a) => a.name.includes(".app") && a.name.endsWith(".zip"));
+    const dmg =
+      assets.find((a) => a.name === "Appunti-Archivio.dmg") ||
+      assets.find((a) => a.name.endsWith(".dmg"));
 
     meta.textContent = `Ultima versione: ${tag}${data.published_at ? " · " + new Date(data.published_at).toLocaleDateString("it-IT") : ""}`;
 
-    if (asset) {
-      downloadBtn.href = asset.browser_download_url;
-      downloadBtn.textContent = `Scarica ${tag}`;
-      heroBtn.href = asset.browser_download_url;
-      heroBtn.textContent = `Scarica ${tag}`;
-    } else {
-      downloadBtn.href = data.html_url;
-      downloadBtn.textContent = `Vai alla release ${tag}`;
-      heroBtn.href = data.html_url;
+    if (dmg) {
+      applyDownloadLinks(dmg.browser_download_url, `Scarica ${tag}`);
     }
   } catch {
-    meta.textContent = "Nessuna release pubblicata ancora — compila con make install o controlla GitHub Releases.";
-    const fallback = `https://github.com/${REPO}/releases`;
-    downloadBtn.href = fallback;
-    heroBtn.href = "#download";
+    meta.textContent =
+      "Download diretto disponibile — se la versione non compare, usa il pulsante qui sopra.";
+    applyDownloadLinks(DIRECT_DMG, "Scarica per macOS");
   }
 }
 

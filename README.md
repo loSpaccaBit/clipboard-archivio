@@ -48,9 +48,10 @@ Built with **SwiftUI**, **Liquid Glass**, and a performance-first architecture: 
 ## Download
 
 - **Landing page:** [lospaccabit.github.io/clipboard-archivio](https://lospaccabit.github.io/clipboard-archivio/)
-- **Latest release:** [GitHub Releases](https://github.com/loSpaccaBit/clipboard-archivio/releases/latest) — DMG with `Appunti Archivio.app` (drag to Applications)
+- **Direct download:** [Appunti-Archivio.dmg](https://github.com/loSpaccaBit/clipboard-archivio/releases/latest/download/Appunti-Archivio.dmg) — installer copies the app to `/Applications`
+- **All releases:** [GitHub Releases](https://github.com/loSpaccaBit/clipboard-archivio/releases/latest)
 - **Build from source:** `make install`
-- **Package for release:** `make package` → `dist/Appunti-Archivio-*.dmg`
+- **Package for release:** `make package` → `dist/Appunti-Archivio.dmg` + `dist/Appunti-Archivio.pkg`
 
 ## Screenshots
 
