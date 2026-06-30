@@ -4,7 +4,6 @@ const DOWNLOAD_URL = "download/Clipboard-Archive.dmg";
 const DOWNLOAD_LABELS = {
   hero: "Download free",
   main: "Download for macOS",
-  footer: "Download Clipboard Archive",
 };
 
 function formatSize(bytes) {
@@ -21,11 +20,9 @@ function setReleaseMeta(text) {
 function setDownloadLabels(tag) {
   const hero = document.getElementById("download-hero");
   const main = document.getElementById("download-btn");
-  const footer = document.getElementById("download-footer");
 
   if (hero) hero.textContent = tag ? `Download ${tag}` : DOWNLOAD_LABELS.hero;
   if (main) main.textContent = tag ? `Download ${tag}` : DOWNLOAD_LABELS.main;
-  if (footer) footer.textContent = tag ? `Download ${tag}` : DOWNLOAD_LABELS.footer;
 }
 
 async function loadLatestRelease() {

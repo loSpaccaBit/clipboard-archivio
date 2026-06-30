@@ -1,5 +1,5 @@
 /* Clipboard Archive — Landing
-   Type: Instrument Serif (display) · Figtree (UI) · JetBrains Mono (mono)
+   Type: Inter
    Theme: white, conversion-first layout
 ──────────────────────────────────────────────────── */
 
@@ -16,9 +16,10 @@
   --accent-h: #1441c0;
   --accent-bg: #eff4ff;
   --radius: 16px;
-  --font-display: "Instrument Serif", Georgia, serif;
-  --font-ui: "Figtree", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-sans);
+  --font-ui: var(--font-sans);
+  --font-mono: var(--font-sans);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --shadow: 0 1px 2px rgba(12, 20, 36, 0.05);
   --shadow-md: 0 12px 40px rgba(12, 20, 36, 0.08);
@@ -51,6 +52,7 @@ body {
   line-height: 1.6;
   color: var(--text);
   background: var(--white);
+  font-optical-sizing: auto;
 }
 
 /* ── A11y ─────────────────────────────────────────── */
@@ -91,21 +93,21 @@ a:hover { color: var(--accent-h); }
 /* ── Typography ───────────────────────────────────── */
 .display-title {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 5vw, 3.75rem);
-  font-weight: 400;
-  line-height: 1.08;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
   margin: 0 0 1rem;
   text-wrap: balance;
 }
-.display-title em { font-style: italic; color: var(--accent); }
+.display-title em { font-style: normal; font-weight: 600; color: var(--accent); }
 
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(1.75rem, 3vw, 2.35rem);
-  font-weight: 400;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
+  font-size: clamp(1.625rem, 3vw, 2.125rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
   margin: 0 0 0.5rem;
   text-wrap: balance;
 }
@@ -138,16 +140,17 @@ a:hover { color: var(--accent-h); }
 
 .brand-name {
   font-family: var(--font-display);
-  font-size: 1.125rem;
-  letter-spacing: -0.02em;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
 }
 
 .mono-label {
   display: block;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.6875rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -155,8 +158,9 @@ a:hover { color: var(--accent-h); }
 .file-name {
   margin: 0.15rem 0 0;
   font-family: var(--font-mono);
-  font-size: 0.95rem;
+  font-size: 0.9375rem;
   font-weight: 600;
+  letter-spacing: -0.02em;
   color: var(--text);
 }
 
@@ -193,7 +197,7 @@ a:hover { color: var(--accent-h); }
 kbd {
   font-family: var(--font-mono);
   font-size: 0.8em;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0.1rem 0.4rem;
   border-radius: 5px;
   background: var(--bg-alt);
@@ -558,23 +562,6 @@ kbd {
   font-size: 0.9rem;
   line-height: 1.65;
   color: var(--text-2);
-}
-
-/* ── CTA band ───────────────────────────────────── */
-.section-cta {
-  padding: 4rem 0;
-  background: var(--accent-bg);
-  border-top: 1px solid rgba(26, 86, 232, 0.12);
-}
-.cta-inner {
-  text-align: center;
-}
-.cta-title {
-  font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 400;
-  margin: 0 0 1.25rem;
-  letter-spacing: -0.02em;
 }
 
 /* ── Footer ─────────────────────────────────────── */
