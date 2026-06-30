@@ -1,28 +1,35 @@
 const REPO = "loSpaccaBit/clipboard-archivio";
 const DOWNLOAD_URL = "download/Appunti-Archivio.dmg";
 
+const DOWNLOAD_LABELS = {
+  hero: "Scarica gratis",
+  main: "Scarica per macOS",
+  footer: "Scarica Appunti Archivio",
+};
+
 function formatSize(bytes) {
   if (!bytes) return "";
   if (bytes < 1024 * 1024) return `${Math.round(bytes / 1024)} KB`;
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 }
 
-function setLabelWithIcon(button, label) {
-  if (!button) return;
-  const svg = button.querySelector("svg");
-  button.textContent = "";
-  if (svg) button.appendChild(svg);
-  button.append(document.createTextNode(` ${label}`));
+function setReleaseMeta(text) {
+  const el = document.getElementById("release-meta");
+  if (el) el.textContent = text;
 }
 
-function setReleaseMeta(text) {
-  const meta = document.getElementById("release-meta");
-  if (meta) meta.textContent = text;
+function setDownloadLabels(tag) {
+  const hero = document.getElementById("download-hero");
+  const main = document.getElementById("download-btn");
+  const footer = document.getElementById("download-footer");
+
+  if (hero) hero.textContent = tag ? `Scarica ${tag}` : DOWNLOAD_LABELS.hero;
+  if (main) main.textContent = tag ? `Scarica ${tag}` : DOWNLOAD_LABELS.main;
+  if (footer) footer.textContent = tag ? `Scarica ${tag}` : DOWNLOAD_LABELS.footer;
 }
 
 async function loadLatestRelease() {
-  setLabelWithIcon(document.getElementById("download-btn"), "Scarica per macOS");
-  setLabelWithIcon(document.getElementById("download-app"), "Scarica Appunti Archivio");
+  setDownloadLabels(null);
   setReleaseMeta("Download diretto dal sito");
 
   try {
@@ -31,35 +38,36 @@ async function loadLatestRelease() {
       fetch(DOWNLOAD_URL, { method: "HEAD" }),
     ]);
 
-    const metaParts = [];
+    const parts = [];
 
     if (releaseRes.ok) {
       const data = await releaseRes.json();
-      const tag = data.tag_name || "latest";
-      metaParts.push(`Versione ${tag}`);
-      if (data.published_at) {
-        metaParts.push(new Date(data.published_at).toLocaleDateString("it-IT"));
+      const tag = data.tag_name || null;
+      if (tag) {
+        parts.push(`Versione ${tag}`);
+        setDownloadLabels(tag);
       }
-      setLabelWithIcon(document.getElementById("download-btn"), `Scarica ${tag}`);
-      setLabelWithIcon(document.getElementById("download-app"), `Scarica ${tag}`);
+      if (data.published_at) {
+        parts.push(new Date(data.published_at).toLocaleDateString("it-IT"));
+      }
     }
 
     if (headRes.ok) {
-      const sizeLabel = formatSize(Number(headRes.headers.get("content-length")));
-      if (sizeLabel) metaParts.push(sizeLabel);
+      const size = formatSize(Number(headRes.headers.get("content-length")));
+      if (size) parts.push(size);
     }
 
-    setReleaseMeta(metaParts.join(" · ") || "Download diretto dal sito");
+    setReleaseMeta(parts.join(" · ") || "Download diretto · Appunti-Archivio.dmg");
   } catch {
     setReleaseMeta("Download diretto · Appunti-Archivio.dmg");
   }
 }
 
 function initReveal() {
-  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const items = document.querySelectorAll(".reveal");
 
-  if (prefersReduced) {
+  if (reduced) {
     items.forEach((el) => el.classList.add("is-visible"));
     return;
   }
@@ -73,7 +81,7 @@ function initReveal() {
         }
       });
     },
-    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    { threshold: 0.1, rootMargin: "0px 0px -32px 0px" }
   );
 
   items.forEach((el) => observer.observe(el));
