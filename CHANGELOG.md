@@ -5,16 +5,19 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.6.4] - 2026-06-30
+
 ### Added
 - First-launch onboarding window after install (menu bar guide, shortcut, opens archive on continue)
 - DMG **Install Clipboard Archive** helper — copies to Applications, launches the app, and ejects the disk (onboarding on first open)
+- Auto Touch ID unlock to reveal vault content when opening the archive panel
 
 ### Changed
-- Distribution is **DMG only** (no `.pkg` installer)
+- Distribution is **DMG only** (no `.pkg` installer); release asset `Clipboard-Archive.dmg`
 - DMG layout: install helper + drag-to-Applications
 - App icon (`AppIcon.icns`) generated from project logo
-- Product renamed to **Clipboard Archive** (display name, `.app` bundle, DMG assets, landing page)
-- Release asset: `Clipboard-Archive.dmg`
+- Product renamed to **Clipboard Archive** (display name, `.app` bundle, landing page)
+- Landing page: English, Inter typography, conversion-first layout
 
 ### Fixed
 - CI / Release workflows: compile on GitHub runners (SDK 15) via `GLASS_SDK_FALLBACK` while local builds keep native Liquid Glass
