@@ -51,8 +51,8 @@ jobs:
             ## Install
 
             1. Download **Clipboard-Archive.dmg** from assets (or the [landing page](https://lospaccabit.github.io/clipboard-archivio/))
-            2. Open the DMG → double-click **Install Clipboard Archive** (macOS PKG installer)
-            3. The app launches automatically; onboarding opens on first run (right-click → Open if Gatekeeper warns)
+            2. Open the DMG → double-click **Install Clipboard Archive**, or drag the app to **Applications**
+            3. Onboarding opens on first launch (right-click → Open if Gatekeeper warns)
 
             ## Release build (maintainer)
 
@@ -60,6 +60,6 @@ jobs:
 
             ```bash
             make package
-            gh release upload ${{ github.ref_name }} dist/Clipboard-Archive.dmg dist/Clipboard-Archive.pkg --clobber
+            gh release upload ${{ github.ref_name }} dist/Clipboard-Archive.dmg --clobber
             git add docs/download/Clipboard-Archive.dmg && git commit -m "docs: update landing DMG for ${{ github.ref_name }}"
             ```

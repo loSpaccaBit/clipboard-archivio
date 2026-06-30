@@ -1,4 +1,4 @@
-.PHONY: generate icon build install package pkg clean i18n validate perf open help
+.PHONY: generate icon build install package clean i18n validate perf open help
 
 APP_NAME := Clipboard Archive
 SCHEME := ClipboardArchivio
@@ -15,8 +15,7 @@ help:
 	@echo "  make icon       Generate AppIcon.icns from docs/assets/logo.svg"
 	@echo "  make build      Build Release"
 	@echo "  make install    Build and copy to ~/Applications"
-	@echo "  make package    Build and create DMG (standard PKG install app)"
-	@echo "  make pkg        Build optional .pkg installer (maintainers)"
+	@echo "  make package    Build and create DMG for distribution"
 	@echo "  make open       Launch installed app"
 	@echo "  make i18n       Rebuild localization catalog"
 	@echo "  make validate   Validate i18n coverage"
@@ -44,10 +43,6 @@ package: build
 	mkdir -p docs/download
 	cp dist/Clipboard-Archive.dmg docs/download/Clipboard-Archive.dmg
 	@echo "Copied DMG to docs/download/ for GitHub Pages direct download"
-
-pkg: build
-	chmod +x Scripts/package-installer.sh
-	Scripts/package-installer.sh
 
 open:
 	open "$(INSTALL_DIR)/$(APP_NAME).app"

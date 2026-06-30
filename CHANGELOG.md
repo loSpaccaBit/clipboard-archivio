@@ -7,13 +7,14 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 - First-launch onboarding window after install (menu bar guide, shortcut, opens archive on continue)
-- DMG **Install Clipboard Archive** app — embeds a macOS `.pkg`, runs `installer`, launches the app, and ejects the disk (onboarding on first open)
+- DMG **Install Clipboard Archive** helper — copies to Applications, launches the app, and ejects the disk (onboarding on first open)
 
 ### Changed
-- DMG uses standard **PKG installer** flow (enterprise / IT-compatible), not drag-to-Applications
+- Distribution is **DMG only** (no `.pkg` installer)
+- DMG layout: install helper + drag-to-Applications
 - App icon (`AppIcon.icns`) generated from project logo
-- Product renamed to **Clipboard Archive** (display name, `.app` bundle, DMG/PKG assets, landing page)
-- Release assets: `Clipboard-Archive.dmg` and optional `Clipboard-Archive.pkg` (`make pkg`)
+- Product renamed to **Clipboard Archive** (display name, `.app` bundle, DMG assets, landing page)
+- Release asset: `Clipboard-Archive.dmg`
 
 ### Fixed
 - CI / Release workflows: compile on GitHub runners (SDK 15) via `GLASS_SDK_FALLBACK` while local builds keep native Liquid Glass
