@@ -24,7 +24,6 @@
   "Automatic deletion disabled": "Eliminazione automatica disattivata",
   "Balanced": "Bilanciato",
   "Cancel": "Annulla",
-  "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Scegli la lingua per Appunti Archivio. Riavvia il pannello per applicare in alcune viste.",
   "Clear all": "Svuota tutto",
   "Clear all history?": "Svuotare tutta la cronologia?",
   "Clear history (except pinned & vault)": "Svuota cronologia (tranne fissati e vault)",
@@ -156,5 +155,6 @@
   "⌘V one at a time": "⌘V uno alla volta",
   "Developer": "Sviluppatore",
   "License": "Licenza",
-  "Licensed under GNU General Public License v3.0 or later": "Licenza GNU General Public License v3.0 o successive"
+  "Licensed under GNU General Public License v3.0 or later": "Licenza GNU General Public License v3.0 o successive",
+  "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Scegli la lingua per Appunti Archivio. Riavvia il pannello per applicare in alcune viste."
 }

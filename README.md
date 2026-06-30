@@ -1,8 +1,8 @@
-# Appunti Archivio
+# Clipboard Archive
 
 <p align="center">
   <a href="https://lospaccabit.github.io/clipboard-archivio/">
-    <img src="docs/assets/logo.svg" alt="Appunti Archivio logo" width="128" height="128">
+    <img src="docs/assets/logo.svg" alt="Clipboard Archive logo" width="128" height="128">
   </a>
 </p>
 
@@ -29,7 +29,7 @@
 
 ## Overview
 
-**Appunti Archivio** lives in the menu bar (no Dock icon) and quietly records everything you copy — text, images, files, and documents. Open the archive with **⌘⇧V**, search instantly, pin important clips, and keep sensitive data in an encrypted vault unlocked with Touch ID.
+**Clipboard Archive** lives in the menu bar (no Dock icon) and quietly records everything you copy — text, images, files, and documents. Open the archive with **⌘⇧V**, search instantly, pin important clips, and keep sensitive data in an encrypted vault unlocked with Touch ID.
 
 Built with **SwiftUI**, **Liquid Glass**, and a performance-first architecture: lazy panel loading, debounced persistence, thumbnail caching, and reference-only storage for Finder files (no unnecessary disk duplication).
 
@@ -48,10 +48,10 @@ Built with **SwiftUI**, **Liquid Glass**, and a performance-first architecture: 
 ## Download
 
 - **Landing page:** [lospaccabit.github.io/clipboard-archivio](https://lospaccabit.github.io/clipboard-archivio/)
-- **Direct download:** [Appunti-Archivio.dmg](https://github.com/loSpaccaBit/clipboard-archivio/releases/latest/download/Appunti-Archivio.dmg) — installer copies the app to `/Applications`
+- **Direct download:** [Clipboard-Archive.dmg](https://github.com/loSpaccaBit/clipboard-archivio/releases/latest/download/Clipboard-Archive.dmg) — installer copies the app to `/Applications`
 - **All releases:** [GitHub Releases](https://github.com/loSpaccaBit/clipboard-archivio/releases/latest)
 - **Build from source:** `make install`
-- **Package for release:** `make package` → `dist/Appunti-Archivio.dmg` + `dist/Appunti-Archivio.pkg`
+- **Package for release:** `make package` → `dist/Clipboard-Archive.dmg` + `dist/Clipboard-Archive.pkg`
 
 ## Screenshots
 
@@ -78,7 +78,7 @@ Or step by step:
 ```bash
 make generate   # xcodegen → ClipboardArchivio.xcodeproj
 make build      # Release build
-make install    # copy to ~/Applications/Appunti Archivio.app
+make install    # copy to ~/Applications/Clipboard Archive.app
 ```
 
 ## Keyboard Shortcuts

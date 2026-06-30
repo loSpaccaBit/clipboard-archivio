@@ -2315,13 +2315,13 @@
         }
       }
     },
-    "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": {
+    "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Choose the language for Appunti Archivio. Restart the panel to apply in some views."
+            "value": "Choose the language for Clipboard Archive. Restart the panel to apply in some views."
           }
         },
         "it": {

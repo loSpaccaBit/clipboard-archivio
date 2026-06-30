@@ -137,7 +137,7 @@
   "Language": "Taal",
   "App language": "App-taal",
   "Follow System": "Systeem volgen",
-  "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Kies de taal voor Clipboard Archive. Start het paneel opnieuw om dit in sommige weergaven toe te passen.",
   "The vault always encrypts sensitive text and files (AES-GCM, key in the Mac Keychain). With “Encrypt full archive”, the index is saved as history.enc. Touch ID is required to view and copy from the vault.": "De kluis versleutelt altijd gevoelige tekst en bestanden (AES-GCM, sleutel in Mac-sleutelhanger). Met 'Volledig archief versleutelen' wordt de index opgeslagen als history.enc. Touch ID is vereist om uit de kluis te bekijken en kopiëren.",
-  "Developer": "Ontwikkelaar"
+  "Developer": "Ontwikkelaar",
+  "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Kies de taal voor Clipboard Archive. Start het paneel opnieuw om dit in sommige weergaven toe te passen."
 }

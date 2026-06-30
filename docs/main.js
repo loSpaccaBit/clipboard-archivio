@@ -1,10 +1,10 @@
 const REPO = "loSpaccaBit/clipboard-archivio";
-const DOWNLOAD_URL = "download/Appunti-Archivio.dmg";
+const DOWNLOAD_URL = "download/Clipboard-Archive.dmg";
 
 const DOWNLOAD_LABELS = {
   hero: "Download free",
   main: "Download for macOS",
-  footer: "Download Appunti Archivio",
+  footer: "Download Clipboard Archive",
 };
 
 function formatSize(bytes) {
@@ -57,9 +57,9 @@ async function loadLatestRelease() {
       if (size) parts.push(size);
     }
 
-    setReleaseMeta(parts.join(" · ") || "Direct download · Appunti-Archivio.dmg");
+    setReleaseMeta(parts.join(" · ") || "Direct download · Clipboard-Archive.dmg");
   } catch {
-    setReleaseMeta("Direct download · Appunti-Archivio.dmg");
+    setReleaseMeta("Direct download · Clipboard-Archive.dmg");
   }
 }
 

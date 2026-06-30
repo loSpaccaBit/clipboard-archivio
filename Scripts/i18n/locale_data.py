@@ -141,7 +141,7 @@ LOCALE_DATA: dict[str, dict[str, str]] = {
         "Language": "Idioma",
         "App language": "Idioma de la app",
         "Follow System": "Seguir el sistema",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Elige el idioma para Clipboard Archive. Reinicia el panel para aplicarlo en algunas vistas.",
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Elige el idioma para Clipboard Archive. Reinicia el panel para aplicarlo en algunas vistas.",
     },
     "pt-BR": {
         "%1$lld of %2$lld": "%1$lld de %2$lld",
@@ -283,7 +283,7 @@ LOCALE_DATA: dict[str, dict[str, str]] = {
         "Language": "Idioma",
         "App language": "Idioma do app",
         "Follow System": "Seguir o sistema",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Escolha o idioma do Clipboard Archive. Reinicie o painel para aplicar em algumas visualizações.",
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Escolha o idioma do Clipboard Archive. Reinicie o painel para aplicar em algumas visualizações.",
     },
     "ja": {
         "%1$lld of %2$lld": "%1$lld / %2$lld",
@@ -425,7 +425,7 @@ LOCALE_DATA: dict[str, dict[str, str]] = {
         "Language": "言語",
         "App language": "アプリの言語",
         "Follow System": "システムに従う",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Clipboard Archiveの言語を選択してください。一部の表示にはパネルの再起動が必要です。",
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Clipboard Archiveの言語を選択してください。一部の表示にはパネルの再起動が必要です。",
     },
     "zh-Hans": {
         "%1$lld of %2$lld": "%1$lld / %2$lld",
@@ -567,7 +567,7 @@ LOCALE_DATA: dict[str, dict[str, str]] = {
         "Language": "语言",
         "App language": "App 语言",
         "Follow System": "跟随系统",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "选择 Clipboard Archive 的语言。部分视图需要重启面板后生效。",
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "选择 Clipboard Archive 的语言。部分视图需要重启面板后生效。",
     },
     "ko": {
         "%1$lld of %2$lld": "%1$lld / %2$lld",
@@ -709,7 +709,7 @@ LOCALE_DATA: dict[str, dict[str, str]] = {
         "Language": "언어",
         "App language": "앱 언어",
         "Follow System": "시스템 따르기",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Clipboard Archive의 언어를 선택하세요. 일부 보기에는 패널을 다시 시작해야 적용됩니다.",
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Clipboard Archive의 언어를 선택하세요. 일부 보기에는 패널을 다시 시작해야 적용됩니다.",
     },
     "nl": {
         "%1$lld of %2$lld": "%1$lld van %2$lld",
@@ -851,7 +851,7 @@ LOCALE_DATA: dict[str, dict[str, str]] = {
         "Language": "Taal",
         "App language": "App-taal",
         "Follow System": "Systeem volgen",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Kies de taal voor Clipboard Archive. Start het paneel opnieuw om dit in sommige weergaven toe te passen.",
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Kies de taal voor Clipboard Archive. Start het paneel opnieuw om dit in sommige weergaven toe te passen.",
     },
     "pl": {
         "%1$lld of %2$lld": "%1$lld z %2$lld",
@@ -993,7 +993,7 @@ LOCALE_DATA: dict[str, dict[str, str]] = {
         "Language": "Język",
         "App language": "Język aplikacji",
         "Follow System": "Zgodnie z systemem",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Wybierz język dla Clipboard Archive. Uruchom ponownie panel, aby zastosować w niektórych widokach.",
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Wybierz język dla Clipboard Archive. Uruchom ponownie panel, aby zastosować w niektórych widokach.",
     },
     "ru": {
         "%1$lld of %2$lld": "%1$lld из %2$lld",
@@ -1135,7 +1135,7 @@ LOCALE_DATA: dict[str, dict[str, str]] = {
         "Language": "Язык",
         "App language": "Язык приложения",
         "Follow System": "Как в системе",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Выберите язык для Clipboard Archive. Перезапустите панель, чтобы применить в некоторых представлениях.",
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Выберите язык для Clipboard Archive. Перезапустите панель, чтобы применить в некоторых представлениях.",
     },
     "ar": {
         "%1$lld of %2$lld": "%1$lld من %2$lld",
@@ -1277,7 +1277,7 @@ LOCALE_DATA: dict[str, dict[str, str]] = {
         "Language": "اللغة",
         "App language": "لغة التطبيق",
         "Follow System": "اتباع النظام",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "اختر لغة Clipboard Archive. أعد تشغيل اللوحة لتطبيقها في بعض العروض.",
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "اختر لغة Clipboard Archive. أعد تشغيل اللوحة لتطبيقها في بعض العروض.",
     },
     "tr": {
         "%1$lld of %2$lld": "%1$lld / %2$lld",
@@ -1419,7 +1419,7 @@ LOCALE_DATA: dict[str, dict[str, str]] = {
         "Language": "Dil",
         "App language": "Uygulama dili",
         "Follow System": "Sistemi izle",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Clipboard Archive için dili seçin. Bazı görünümlerde uygulamak için paneli yeniden başlatın.",
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Clipboard Archive için dili seçin. Bazı görünümlerde uygulamak için paneli yeniden başlatın.",
     },
     "it": {
         "%1$lld of %2$lld": "%1$lld di %2$lld",
@@ -1561,6 +1561,6 @@ LOCALE_DATA: dict[str, dict[str, str]] = {
         "Language": "Lingua",
         "App language": "Lingua dell'app",
         "Follow System": "Segui sistema",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Scegli la lingua per Appunti Archivio. Riavvia il pannello per applicare in alcune viste.",
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Scegli la lingua per Appunti Archivio. Riavvia il pannello per applicare in alcune viste.",
     },
 }

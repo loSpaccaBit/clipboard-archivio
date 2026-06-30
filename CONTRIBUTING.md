@@ -1,4 +1,4 @@
-# Contributing to Appunti Archivio
+# Contributing to Clipboard Archive
 
 Thank you for your interest in contributing. This project is maintained by **Francesco Pio Nocerino**.
 

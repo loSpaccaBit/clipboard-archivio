@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-APP_NAME="Appunti Archivio"
+APP_NAME="Clipboard Archive"
 VERSION="${1:-}"
 VERSION="${VERSION#v}"
 APP_PATH="${2:-$ROOT/build/Build/Products/Release/$APP_NAME.app}"
@@ -24,8 +24,8 @@ OUT_DIR="$ROOT/dist"
 mkdir -p "$OUT_DIR"
 
 COMPONENT_PKG="$STAGING/component.pkg"
-PKG_PATH="$OUT_DIR/Appunti-Archivio.pkg"
-VERSIONED_PKG="$OUT_DIR/Appunti-Archivio-v${VERSION}.pkg"
+PKG_PATH="$OUT_DIR/Clipboard-Archive.pkg"
+VERSIONED_PKG="$OUT_DIR/Clipboard-Archive-v${VERSION}.pkg"
 
 pkgbuild \
   --component "$APP_PATH" \

@@ -114,8 +114,8 @@ def main() -> int:
             "Licensed under GNU General Public License v3.0 or later"
         ),
         "Copyright © %1$lld %2$@": "Copyright © %1$lld %2$@",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": (
-            "Choose the language for Appunti Archivio. Restart the panel to apply in some views."
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": (
+            "Choose the language for Clipboard Archive. Restart the panel to apply in some views."
         ),
     }
     for key, en in new_keys.items():

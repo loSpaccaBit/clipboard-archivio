@@ -1,9 +1,14 @@
 # Changelog
 
-All notable changes to **Appunti Archivio** are documented here.  
+All notable changes to **Clipboard Archive** are documented here.  
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
+
+### Changed
+- Product renamed to **Clipboard Archive** (display name, `.app` bundle, DMG/PKG assets, landing page)
+- Release assets: `Clipboard-Archive.dmg` and `Clipboard-Archive.pkg`
+- Installer app: **Install Clipboard Archive**
 
 ### Fixed
 - CI / Release workflows: compile on GitHub runners (SDK 15) via `GLASS_SDK_FALLBACK` while local builds keep native Liquid Glass

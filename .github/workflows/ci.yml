@@ -47,7 +47,7 @@ jobs:
             build
 
       - name: Verify app bundle
-        run: test -d "build/Build/Products/Release/Appunti Archivio.app"
+        run: test -d "build/Build/Products/Release/Clipboard Archive.app"
 
       - name: Note
         run: |

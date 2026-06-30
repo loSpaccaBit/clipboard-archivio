@@ -150,7 +150,7 @@ KEYS = [
     "Language",
     "App language",
     "Follow System",
-    "Choose the language for Appunti Archivio. Restart the panel to apply in some views.",
+    "Choose the language for Clipboard Archive. Restart the panel to apply in some views.",
 ]
 
 TRANSLATIONS: dict[str, dict[str, str]] = {
@@ -294,7 +294,7 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
         "Language": "Sprache",
         "App language": "App-Sprache",
         "Follow System": "Systemeinstellung folgen",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Wählen Sie die Sprache für Clipboard Archive. Starten Sie das Panel neu, damit die Änderung in einigen Ansichten wirksam wird.",
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Wählen Sie die Sprache für Clipboard Archive. Starten Sie das Panel neu, damit die Änderung in einigen Ansichten wirksam wird.",
     },
     "fr": {
         "%1$lld of %2$lld": "%1$lld sur %2$lld",
@@ -436,7 +436,7 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
         "Language": "Langue",
         "App language": "Langue de l'app",
         "Follow System": "Suivre le système",
-        "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Choisissez la langue pour Clipboard Archive. Redémarrez le panneau pour l'appliquer dans certaines vues.",
+        "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Choisissez la langue pour Clipboard Archive. Redémarrez le panneau pour l'appliquer dans certaines vues.",
     },
 }
 

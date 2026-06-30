@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Campiona CPU e memoria di Appunti Archivio per N secondi.
+# Sample CPU and memory for Clipboard Archive over N seconds.
 set -euo pipefail
 export LC_NUMERIC=C
 
-APP_NAME="Appunti Archivio"
+APP_NAME="Clipboard Archive"
 DURATION="${1:-30}"
 INTERVAL="${2:-2}"
 REPORT_DIR="${3:-/Users/lospaccabit/ClipboardArchivio/Scripts/reports}"

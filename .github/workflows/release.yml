@@ -36,7 +36,7 @@ jobs:
             MACOSX_DEPLOYMENT_TARGET=15.0 \
             SWIFT_ACTIVE_COMPILATION_CONDITIONS='$(inherited) GLASS_SDK_FALLBACK' \
             build
-      - run: test -d "build/Build/Products/Release/Appunti Archivio.app"
+      - run: test -d "build/Build/Products/Release/Clipboard Archive.app"
 
   release-notes:
     name: GitHub Release notes
@@ -48,18 +48,18 @@ jobs:
         with:
           generate_release_notes: true
           body: |
-            ## Installazione
+            ## Install
 
-            1. Scarica **Appunti-Archivio.dmg** dagli asset (o dalla [landing](https://lospaccabit.github.io/clipboard-archivio/))
-            2. Apri il DMG → doppio clic su **Installa Appunti Archivio**
-            3. Conferma nell'installer di sistema
+            1. Download **Clipboard-Archive.dmg** from assets (or the [landing page](https://lospaccabit.github.io/clipboard-archivio/))
+            2. Open the DMG → double-click **Install Clipboard Archive**
+            3. Confirm in the system installer
 
-            ## Build release (maintainer)
+            ## Release build (maintainer)
 
-            I runner GitHub non hanno ancora Xcode 17 / macOS 26 SDK. Per un DMG con Liquid Glass nativo:
+            GitHub runners do not yet have Xcode 17 / macOS 26 SDK. For a DMG with native Liquid Glass:
 
             ```bash
             make package
-            gh release upload ${{ github.ref_name }} dist/Appunti-Archivio.dmg dist/Appunti-Archivio.pkg --clobber
-            git add docs/download/Appunti-Archivio.dmg && git commit -m "docs: update landing DMG for ${{ github.ref_name }}"
+            gh release upload ${{ github.ref_name }} dist/Clipboard-Archive.dmg dist/Clipboard-Archive.pkg --clobber
+            git add docs/download/Clipboard-Archive.dmg && git commit -m "docs: update landing DMG for ${{ github.ref_name }}"
             ```

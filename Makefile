@@ -1,6 +1,6 @@
 .PHONY: generate build install package clean i18n validate perf open help
 
-APP_NAME := Appunti Archivio
+APP_NAME := Clipboard Archive
 SCHEME := ClipboardArchivio
 CONFIG := Release
 BUILD_DIR := build
@@ -8,7 +8,7 @@ PRODUCT := $(BUILD_DIR)/Build/Products/$(CONFIG)/$(APP_NAME).app
 INSTALL_DIR := $(HOME)/Applications
 
 help:
-	@echo "Appunti Archivio — development commands"
+	@echo "Clipboard Archive — development commands"
 	@echo ""
 	@echo "  make generate   Regenerate Xcode project (xcodegen)"
 	@echo "  make build      Build Release"
@@ -36,7 +36,7 @@ package: build
 	Scripts/package-installer.sh
 	Scripts/package-dmg.sh
 	mkdir -p docs/download
-	cp dist/Appunti-Archivio.dmg docs/download/Appunti-Archivio.dmg
+	cp dist/Clipboard-Archive.dmg docs/download/Clipboard-Archive.dmg
 	@echo "Copied DMG to docs/download/ for GitHub Pages direct download"
 
 open:

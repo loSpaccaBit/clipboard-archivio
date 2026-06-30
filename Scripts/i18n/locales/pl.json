@@ -137,7 +137,7 @@
   "Language": "Język",
   "App language": "Język aplikacji",
   "Follow System": "Zgodnie z systemem",
-  "Choose the language for Appunti Archivio. Restart the panel to apply in some views.": "Wybierz język dla Clipboard Archive. Uruchom ponownie panel, aby zastosować w niektórych widokach.",
   "The vault always encrypts sensitive text and files (AES-GCM, key in the Mac Keychain). With “Encrypt full archive”, the index is saved as history.enc. Touch ID is required to view and copy from the vault.": "Sejf zawsze szyfruje wrażliwe teksty i pliki (AES-GCM, klucz w Pęku kluczy Maca). Przy „Szyfruj całe archiwum” indeks jest zapisywany jako history.enc. Touch ID jest wymagany do podglądu i kopiowania z sejfu.",
-  "Developer": "Deweloper"
+  "Developer": "Deweloper",
+  "Choose the language for Clipboard Archive. Restart the panel to apply in some views.": "Wybierz język dla Clipboard Archive. Uruchom ponownie panel, aby zastosować w niektórych widokach."
 }

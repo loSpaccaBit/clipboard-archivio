@@ -320,7 +320,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Appunti Archivio";
+				INFOPLIST_KEY_CFBundleDisplayName = "Clipboard Archive";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Francesco Pio Nocerino";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +330,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.6.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.clipboardarchivio.app;
-				PRODUCT_NAME = "Appunti Archivio";
+				PRODUCT_NAME = "Clipboard Archive";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -344,7 +344,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Appunti Archivio";
+				INFOPLIST_KEY_CFBundleDisplayName = "Clipboard Archive";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Francesco Pio Nocerino";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -354,7 +354,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.6.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.clipboardarchivio.app;
-				PRODUCT_NAME = "Appunti Archivio";
+				PRODUCT_NAME = "Clipboard Archive";
 				SDKROOT = macosx;
 			};
 			name = Debug;
