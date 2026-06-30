@@ -31,13 +31,13 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             build
 
-      - name: Package app
+      - name: Package DMG
         run: |
-          cd build/Build/Products/Release
-          zip -r ../../../../Appunti-Archivio-${{ github.ref_name }}.zip "Appunti Archivio.app"
+          chmod +x Scripts/package-dmg.sh
+          Scripts/package-dmg.sh "${{ github.ref_name }}" build/Build/Products/Release/"Appunti Archivio.app"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: build/Appunti-Archivio-${{ github.ref_name }}.zip
+          files: dist/Appunti-Archivio-*.dmg
           generate_release_notes: true

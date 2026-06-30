@@ -3,6 +3,12 @@
 All notable changes to **Appunti Archivio** are documented here.  
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.6.2] - 2026-06-30
+
+### Changed
+- GitHub releases ship a **DMG** containing `Appunti Archivio.app` and an Applications shortcut (replaces `.zip`)
+- `make package` and `Scripts/package-dmg.sh` for local release builds
+
 ## [1.6.1] - 2026-06-30
 
 ### Added

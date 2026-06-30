@@ -28,6 +28,8 @@ venv/
 Scripts/reports/
 *.log
 Appunti-Archivio-*.zip
+Appunti-Archivio-*.dmg
+dist/
 
 # Secrets / local config
 .env

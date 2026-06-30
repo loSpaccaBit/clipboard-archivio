@@ -328,7 +328,7 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.6.1;
+				MARKETING_VERSION = 1.6.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.clipboardarchivio.app;
 				PRODUCT_NAME = "Appunti Archivio";
 				SDKROOT = macosx;
@@ -352,7 +352,7 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.6.1;
+				MARKETING_VERSION = 1.6.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.clipboardarchivio.app;
 				PRODUCT_NAME = "Appunti Archivio";
 				SDKROOT = macosx;

@@ -1,4 +1,4 @@
-.PHONY: generate build install clean i18n validate perf open help
+.PHONY: generate build install package clean i18n validate perf open help
 
 APP_NAME := Appunti Archivio
 SCHEME := ClipboardArchivio
@@ -13,6 +13,7 @@ help:
 	@echo "  make generate   Regenerate Xcode project (xcodegen)"
 	@echo "  make build      Build Release"
 	@echo "  make install    Build and copy to ~/Applications"
+	@echo "  make package    Build and create dist/*.dmg for release"
 	@echo "  make open       Launch installed app"
 	@echo "  make i18n       Rebuild localization catalog"
 	@echo "  make validate   Validate i18n coverage"
@@ -29,6 +30,10 @@ install: build
 	rm -rf "$(INSTALL_DIR)/$(APP_NAME).app"
 	cp -R "$(PRODUCT)" "$(INSTALL_DIR)/"
 	@echo "Installed to $(INSTALL_DIR)/$(APP_NAME).app"
+
+package: build
+	chmod +x Scripts/package-dmg.sh
+	Scripts/package-dmg.sh
 
 open:
 	open "$(INSTALL_DIR)/$(APP_NAME).app"

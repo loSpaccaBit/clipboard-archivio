@@ -2,7 +2,7 @@ const REPO = "loSpaccaBit/clipboard-archivio";
 
 async function loadLatestRelease() {
   const meta = document.getElementById("release-meta");
-  const zipBtn = document.getElementById("download-zip");
+  const downloadBtn = document.getElementById("download-app");
   const heroBtn = document.getElementById("download-btn");
 
   try {
@@ -11,24 +11,27 @@ async function loadLatestRelease() {
 
     const data = await res.json();
     const tag = data.tag_name || "latest";
-    const asset = (data.assets || []).find((a) => a.name.endsWith(".zip"));
+    const assets = data.assets || [];
+    const asset =
+      assets.find((a) => a.name.endsWith(".dmg")) ||
+      assets.find((a) => a.name.includes(".app") && a.name.endsWith(".zip"));
 
     meta.textContent = `Ultima versione: ${tag}${data.published_at ? " · " + new Date(data.published_at).toLocaleDateString("it-IT") : ""}`;
 
     if (asset) {
-      zipBtn.href = asset.browser_download_url;
-      zipBtn.textContent = `Scarica ${tag}`;
+      downloadBtn.href = asset.browser_download_url;
+      downloadBtn.textContent = `Scarica ${tag}`;
       heroBtn.href = asset.browser_download_url;
       heroBtn.textContent = `Scarica ${tag}`;
     } else {
-      zipBtn.href = data.html_url;
-      zipBtn.textContent = `Vai alla release ${tag}`;
+      downloadBtn.href = data.html_url;
+      downloadBtn.textContent = `Vai alla release ${tag}`;
       heroBtn.href = data.html_url;
     }
   } catch {
     meta.textContent = "Nessuna release pubblicata ancora — compila con make install o controlla GitHub Releases.";
     const fallback = `https://github.com/${REPO}/releases`;
-    zipBtn.href = fallback;
+    downloadBtn.href = fallback;
     heroBtn.href = "#download";
   }
 }
