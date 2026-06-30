@@ -5,6 +5,9 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Fixed
+- Web copies saved as HTML file instead of plain text — text is now preferred over inline HTML/RTF on the pasteboard
+
 ## [1.6.4] - 2026-06-30
 
 ### Added

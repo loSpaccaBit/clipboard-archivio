@@ -14,6 +14,17 @@ struct ParsedClipboard {
 }
 
 enum ClipboardParser {
+    /// Formati trattati come testo, mai come file inline (es. copia da browser).
+    private static let textLikeUTIs: Set<String> = [
+        UTType.html.identifier,
+        UTType.rtf.identifier,
+        UTType.plainText.identifier,
+        "net.daringfireball.markdown",
+        UTType.xml.identifier,
+        UTType.json.identifier,
+        UTType.commaSeparatedText.identifier,
+    ]
+
     static func parse(_ pasteboard: NSPasteboard) -> ParsedClipboard? {
         if let files = readFileURLs(from: pasteboard), !files.isEmpty {
             if files.count == 1, let image = ClipboardMediaTypes.imageFromFileURL(files[0]) {
@@ -42,20 +53,6 @@ enum ClipboardParser {
             )
         }
 
-        if let inline = readInlineFileData(from: pasteboard) {
-            return ParsedClipboard(
-                type: .file,
-                text: nil,
-                imageData: nil,
-                imageUTI: nil,
-                imageFileName: nil,
-                fileURLs: [],
-                inlineFileData: inline.data,
-                inlineFileUTI: inline.uti,
-                inlineFileName: inline.fileName
-            )
-        }
-
         if let image = readImageData(from: pasteboard) {
             return ParsedClipboard(
                 type: .image,
@@ -70,8 +67,7 @@ enum ClipboardParser {
             )
         }
 
-        if let text = pasteboard.string(forType: .string)?
-            .trimmingCharacters(in: .whitespacesAndNewlines), !text.isEmpty {
+        if let text = readPlainText(from: pasteboard) {
             return ParsedClipboard(
                 type: .text,
                 text: text,
@@ -85,7 +81,54 @@ enum ClipboardParser {
             )
         }
 
+        if let inline = readInlineFileData(from: pasteboard) {
+            return ParsedClipboard(
+                type: .file,
+                text: nil,
+                imageData: nil,
+                imageUTI: nil,
+                imageFileName: nil,
+                fileURLs: [],
+                inlineFileData: inline.data,
+                inlineFileUTI: inline.uti,
+                inlineFileName: inline.fileName
+            )
+        }
+
         return nil
+    }
+
+    private static func readPlainText(from pasteboard: NSPasteboard) -> String? {
+        let candidates = [
+            pasteboard.string(forType: .string),
+            pasteboard.string(forType: .plainText),
+            plainText(fromHTML: pasteboard),
+            plainText(fromRTF: pasteboard),
+        ]
+        for candidate in candidates {
+            if let text = candidate?.trimmingCharacters(in: .whitespacesAndNewlines), !text.isEmpty {
+                return text
+            }
+        }
+        return nil
+    }
+
+    private static func plainText(fromHTML pasteboard: NSPasteboard) -> String? {
+        guard let data = pasteboard.data(forType: .html), !data.isEmpty else { return nil }
+        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
+            .documentType: NSAttributedString.DocumentType.html,
+            .characterEncoding: String.Encoding.utf8.rawValue,
+        ]
+        guard let attributed = try? NSAttributedString(data: data, options: options, documentAttributes: nil) else {
+            return nil
+        }
+        return attributed.string
+    }
+
+    private static func plainText(fromRTF pasteboard: NSPasteboard) -> String? {
+        guard let data = pasteboard.data(forType: .rtf), !data.isEmpty else { return nil }
+        guard let attributed = try? NSAttributedString(rtf: data, documentAttributes: nil) else { return nil }
+        return attributed.string
     }
 
     private static func readFileURLs(from pasteboard: NSPasteboard) -> [URL]? {
@@ -107,7 +150,7 @@ enum ClipboardParser {
     }
 
     private static func readInlineFileData(from pasteboard: NSPasteboard) -> (data: Data, uti: String, fileName: String)? {
-        for entry in ClipboardMediaTypes.documentTypes {
+        for entry in ClipboardMediaTypes.documentTypes where !textLikeUTIs.contains(entry.uti.identifier) {
             if let data = pasteboard.data(forType: entry.pasteboardType), !data.isEmpty {
                 return (data, entry.uti.identifier, entry.defaultFileName)
             }
