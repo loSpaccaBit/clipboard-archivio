@@ -6,7 +6,8 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Fixed
-- Web copies saved as HTML file instead of plain text — text is now preferred over inline HTML/RTF on the pasteboard
+- Web copies (e.g. landing page titles) saved as HTML file — plain text is preferred, HTML in `NSString` is converted to readable text, HTML/RTF removed from inline file types
+- Clipboard polling too slow and missing rapid copies — faster interval (0.3s), immediate capture with browser settle retry
 
 ## [1.6.4] - 2026-06-30
 

@@ -36,13 +36,7 @@ enum ClipboardMediaTypes {
         entry(.pages, .pages, "pages", "documento.pages"),
         entry(.numbers, .numbers, "numbers", "foglio.numbers"),
         entry(.keynote, .keynote, "key", "presentazione.key"),
-        entry(.rtf, .rtf, "rtf", "documento.rtf"),
-        entry(.plainText, .plainText, "txt", "documento.txt"),
-        entry(.commaSeparatedText, .commaSeparatedText, "csv", "dati.csv"),
-        entry(.json, .json, "json", "dati.json"),
-        entry(.xml, .xml, "xml", "documento.xml"),
-        entry(.html, .html, "html", "documento.html"),
-        entry(.markdown, .markdown, "md", "documento.md"),
+        // Text-like formats (HTML, RTF, plain text, …) are handled as ClipboardContentType.text — never as inline files.
         entry(.odt, .odt, "odt", "documento.odt"),
         entry(.ods, .ods, "ods", "foglio.ods"),
         entry(.odp, .odp, "odp", "presentazione.odp"),
@@ -50,7 +44,7 @@ enum ClipboardMediaTypes {
     ]
 
     static let documentExtensions: Set<String> = Set(
-        documentTypes.map(\.fileExtension) + ["key", "txt", "md", "yaml", "yml"]
+        documentTypes.map(\.fileExtension) + ["key", "txt", "md", "html", "xml", "json", "yaml", "yml"]
     )
 
     static func fileExtension(forUTI uti: String?) -> String? {
